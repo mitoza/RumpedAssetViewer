@@ -7,6 +7,9 @@
 #include <string>
 
 #include "SFML/Window/VideoMode.hpp"
+#include "SFML/Graphics.hpp"
+#include "TGUI/TGUI.hpp"
+
 
 namespace rumpedav {
     class ApplicationConfig {
@@ -24,6 +27,13 @@ namespace rumpedav {
         [[nodiscard]] sf::VideoMode getVideoMode() const;
 
         static std::string getTitle();
+        static bool isVSync();
+        static unsigned int getStyle();
+        static unsigned int getFramerateLimit();
+
+        static tgui::Theme getLightTheme();
+        static tgui::Theme getDarkTheme();
+
 
         // Default theme renderers
         // BaseThemeLoader, DefaultThemeLoader

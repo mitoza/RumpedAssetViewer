@@ -5,26 +5,16 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
-#include <TGUI/TGUI.hpp>
-#include <TGUI/Backend/SFML-Graphics.hpp>
 #include "ApplicationConfig.h"
 
 namespace rumpedav {
     class Application {
-
-        ApplicationConfig appConfig;
-        sf::RenderWindow window;
-        tgui::Gui gui;
-
     public:
-        explicit Application(ApplicationConfig &config);
-        ~Application() = default;
+        explicit Application(ApplicationConfig &_config);
+
+        ~Application();
 
         void run();
-
-    private:
-        void handleEvents();
-
     };
 }
 

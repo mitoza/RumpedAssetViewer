@@ -4,31 +4,18 @@
 
 #include "../include/Application.h"
 
+#include "../include/MainWindow.h"
+
 namespace rumpedav {
-    Application::Application(ApplicationConfig &config)
-        : appConfig(config),
-          window(config.getVideoMode(), config.getTitle()),
-          gui(window) {
+    Application::Application(ApplicationConfig &_config) {
+        Context::config = ApplicationConfig(_config);
+        //window.setIcon()
     }
 
+    Application::~Application() = default;
+
     void Application::run() {
-        while (window.isOpen()) {
-            sf::Event event;
-            while (window.pollEvent(event)) {
-                gui.handleEvent(event);
-
-                switch (event.type) {
-                    case sf::Event::Closed:
-                        window.close();
-                    break;
-                    default:
-                        break;
-                }
-            }
-
-            window.clear();
-            gui.draw();
-            window.display();
-        }
+        MainWindow mainWindow;
+        mainWindow.show(false);
     }
 }

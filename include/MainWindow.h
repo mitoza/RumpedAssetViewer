@@ -7,16 +7,17 @@
 #include "BaseWindow.h"
 
 namespace rumpedav {
-    class MainWindow: public BaseWindow {
+#define WNAME_MAIN_WINDOW "w_main_window"
+#define WNAME_MAIN_TOP_PANEL "w_main_toolbar"
+#define WNAME_MAIN_BTN_CLOSE "w_main_btn_close"
 
-        void addToolbar();
-
+    class MainWindow : public BaseWindow {
     public:
-        explicit MainWindow(tgui::Gui &gui) : BaseWindow(gui) {
+        explicit MainWindow();
 
-        }
+        void run() override;
 
-        ~MainWindow();
+        void resize(sf::Vector2u size) override;
 
     };
 }

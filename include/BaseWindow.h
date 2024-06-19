@@ -43,28 +43,41 @@
  *      gui.removeAllWidgets();
  */
 
-#include <vector>
+
 #include <TGUI/TGUI.hpp>
 #include <TGUI/Backend/SFML-Graphics.hpp>
 #include <TGUI/Widgets/Button.hpp>
 #include <TGUI/Widgets/CheckBox.hpp>
+#include "Context.h"
+
 
 namespace rumpedav {
+    class BaseWindow : public Context {
+        static std::vector<std::shared_ptr<BaseWindow>> m_windows;
+        static size_t currentWindowIndex;
 
-#define WNAME_MAIN_WINDOW "w_main_window"
-#define WNAME_MAIN_TOOLBAR "w_main_toolbar"
+    protected:
+        sf::Thread thread;
+        sf::RenderWindow window;
+        tgui::Gui gui;
 
-
-    class BaseWindow {
-        std::vector<tgui::Widget::Ptr> m_widgets;
-        tgui::Gui &m_gui;
+        virtual void run();
 
     public:
-        explicit BaseWindow(tgui::Gui &gui);
-
+        BaseWindow();
         ~BaseWindow();
 
-        [[nodiscard]] tgui::Gui &getGui() const;
+        [[nodiscard]] sf::RenderWindow &Window();
+
+        [[nodiscard]] tgui::Gui &Gui();
+
+        virtual void resize(sf::Vector2u size);
+
+        size_t show(bool runThread);
+
+        void close(size_t index);
+
+        static void closeAll();
     };
 }
 
