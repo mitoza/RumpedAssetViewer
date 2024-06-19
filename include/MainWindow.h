@@ -6,14 +6,19 @@
 #define MAINWINDOW_H
 #include "BaseWindow.h"
 
+namespace rumpedav {
+    class MainWindow: public BaseWindow {
 
-class MainWindow: public BaseWindow {
+        void addToolbar();
 
-public:
-    MainWindow() = default;
-    ~MainWindow() = default;
-};
+    public:
+        explicit MainWindow(tgui::Gui &gui) : BaseWindow(gui) {
 
+        }
 
+        ~MainWindow();
+
+    };
+}
 
 #endif //MAINWINDOW_H

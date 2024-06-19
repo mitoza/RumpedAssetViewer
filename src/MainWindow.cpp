@@ -3,3 +3,7 @@
 //
 
 #include "../include/MainWindow.h"
+
+namespace rumpedav {
+    MainWindow::~MainWindow() = default;
+}

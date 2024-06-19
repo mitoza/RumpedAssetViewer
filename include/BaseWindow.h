@@ -5,12 +5,6 @@
 #ifndef BASEWINDOW_H
 #define BASEWINDOW_H
 
-#include <vector>
-#include <TGUI/Core.hpp>
-#include <TGUI/Backend/SFML-Graphics.hpp>
-#include <TGUI/Widgets/Button.hpp>
-#include <TGUI/Widgets/CheckBox.hpp>
-
 /*
  *  https://tgui.eu/documentation/latest-stable/annotated.html
  *  Standard TGUI Simple Widgets List:
@@ -49,14 +43,29 @@
  *      gui.removeAllWidgets();
  */
 
+#include <vector>
+#include <TGUI/TGUI.hpp>
+#include <TGUI/Backend/SFML-Graphics.hpp>
+#include <TGUI/Widgets/Button.hpp>
+#include <TGUI/Widgets/CheckBox.hpp>
+
+namespace rumpedav {
+
 #define WNAME_MAIN_WINDOW "w_main_window"
 #define WNAME_MAIN_TOOLBAR "w_main_toolbar"
 
-class BaseWindow {
-    std::vector<tgui::Widget::Ptr> m_widgets;
 
-};
+    class BaseWindow {
+        std::vector<tgui::Widget::Ptr> m_widgets;
+        tgui::Gui &m_gui;
 
+    public:
+        explicit BaseWindow(tgui::Gui &gui);
 
+        ~BaseWindow();
+
+        [[nodiscard]] tgui::Gui &getGui() const;
+    };
+}
 
 #endif //BASEWINDOW_H

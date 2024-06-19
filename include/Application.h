@@ -9,23 +9,23 @@
 #include <TGUI/Backend/SFML-Graphics.hpp>
 #include "ApplicationConfig.h"
 
-class Application {
+namespace rumpedav {
+    class Application {
 
-    ApplicationConfig appConfig;
-    sf::RenderWindow window;
-    tgui::Gui gui;
+        ApplicationConfig appConfig;
+        sf::RenderWindow window;
+        tgui::Gui gui;
 
-public:
-    explicit Application(ApplicationConfig &config);
-    ~Application() = default;
+    public:
+        explicit Application(ApplicationConfig &config);
+        ~Application() = default;
 
-    void run();
+        void run();
 
-private:
-    void handleEvents();
+    private:
+        void handleEvents();
 
-};
-
-
+    };
+}
 
 #endif //APPLICATION_H

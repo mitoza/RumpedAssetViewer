@@ -4,12 +4,21 @@ project(AssetViewer)
 set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-# SFML Options
-option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
+IF (WIN32 AND (CMAKE_BUILD_TYPE MATCHES Release))
+    # SFML Options
+    option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
-#TGUI Options
-set(TGUI_BACKEND SFML_GRAPHICS)
-set(TGUI_STATIC_LIBRARIES TRUE)
+    #TGUI Options
+    set(TGUI_BACKEND SFML_GRAPHICS)
+    set(TGUI_STATIC_LIBRARIES TRUE)
+ELSE ()
+    # SFML Options
+    option(BUILD_SHARED_LIBS "Build shared libraries" ON)
+
+    #TGUI Options
+    set(TGUI_BACKEND SFML_GRAPHICS)
+    set(TGUI_STATIC_LIBRARIES FALSE)
+ENDIF ()
 
 
 file(GLOB_RECURSE USER_SOURCES ./src/*.cpp)
@@ -37,7 +46,7 @@ FetchContent_MakeAvailable(
 
 file(GLOB_RECURSE SRC_FILES ./src/*.cpp)
 file(GLOB_RECURSE INCLUDE_DIR ./include)
-IF (WIN32)
+IF (WIN32 AND (CMAKE_BUILD_TYPE MATCHES Release))
     add_executable(${CMAKE_PROJECT_NAME} WIN32
             main.cpp
             ${SRC_FILES}
