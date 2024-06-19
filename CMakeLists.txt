@@ -4,8 +4,13 @@ project(AssetViewer)
 set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-option(BUILD_SHARED_LIBS "Build shared libraries" ON)
+# SFML Options
+option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
+
+#TGUI Options
 set(TGUI_BACKEND SFML_GRAPHICS)
+set(TGUI_STATIC_LIBRARIES TRUE)
+
 
 file(GLOB_RECURSE USER_SOURCES ./src/*.cpp)
 
@@ -20,18 +25,37 @@ FetchContent_Declare(TGUI
         GIT_TAG 1.x
 )
 # EnTT https://github.com/skypjack/entt/wiki
-FetchContent_Declare(EnTT
-        GIT_REPOSITORY https://github.com/skypjack/entt.git
-        GIT_TAG master
+#FetchContent_Declare(EnTT
+#        GIT_REPOSITORY https://github.com/skypjack/entt.git
+#        GIT_TAG master
+#)
+FetchContent_MakeAvailable(
+        SFML
+        TGUI
+        #        EnTT
 )
-FetchContent_MakeAvailable(SFML TGUI EnTT)
 
+file(GLOB_RECURSE SRC_FILES ./src/*.cpp)
+file(GLOB_RECURSE INCLUDE_DIR ./include)
+IF (WIN32)
+    add_executable(${CMAKE_PROJECT_NAME} WIN32
+            main.cpp
+            ${SRC_FILES}
+    )
+ELSE ()
+    add_executable(${CMAKE_PROJECT_NAME}
+            main.cpp
+            ${SRC_FILES}
+    )
+ENDIF ()
 
-add_executable(AssetViewer main.cpp)
-
-target_link_libraries(${PROJECT_NAME} PRIVATE
+target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${INCLUDE_DIR})
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
         sfml-system
         sfml-graphics
         sfml-window
+
+        TGUI::TGUI
+
 )
-target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
+target_compile_features(${CMAKE_PROJECT_NAME} PRIVATE cxx_std_17)
