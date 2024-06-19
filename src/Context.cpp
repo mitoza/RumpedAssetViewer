@@ -8,9 +8,13 @@ namespace rumpedav {
 
     Context::Context() = default;
 
+    Context::Context(ApplicationConfig &_config) {
+        config = _config;
+    }
+
     Context::~Context() = default;
 
-    ApplicationConfig &Context::Config() {
+    ApplicationConfig &Context::getConfig() {
         return config;
     }
 

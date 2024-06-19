@@ -6,7 +6,7 @@
 #include <iostream>
 
 namespace rumpedav {
-    MainWindow::MainWindow() : BaseWindow() {
+    MainWindow::MainWindow(Context &_context) : BaseWindow(_context) {
 
         window.create(config.getVideoMode(), config.getTitle(), config.getStyle());
         gui.setWindow(window);
@@ -15,7 +15,7 @@ namespace rumpedav {
         window.setFramerateLimit(config.getFramerateLimit());
     }
 
-    void MainWindow::run() {
+    void MainWindow::create() {
         try {
             const tgui::Panel::Ptr mainTopPanel = tgui::Panel::create();
             gui.add(mainTopPanel, WNAME_MAIN_TOP_PANEL);
@@ -39,6 +39,10 @@ namespace rumpedav {
         const tgui::Button::Ptr btnClose = gui.get<tgui::Button>(WNAME_MAIN_BTN_CLOSE);
         btnClose->setSize({"48", "48"});
         btnClose->setPosition(mainTopPanel->getSize().x - btnClose->getSize().x, 0);
+    }
+
+    void MainWindow::destroy() {
+        gui.removeAllWidgets();
     }
 
 }

@@ -8,14 +8,15 @@
 
 namespace rumpedav {
     Application::Application(ApplicationConfig &_config) {
-        Context::config = ApplicationConfig(_config);
+
         //window.setIcon()
     }
 
     Application::~Application() = default;
 
     void Application::run() {
-        MainWindow mainWindow;
+        MainWindow mainWindow(context);
         mainWindow.show(false);
     }
+
 }

@@ -6,15 +6,20 @@
 #define APPLICATION_H
 
 #include "ApplicationConfig.h"
+#include "Context.h"
 
 namespace rumpedav {
+    class Context;
+
     class Application {
+        Context context;
     public:
         explicit Application(ApplicationConfig &_config);
 
         ~Application();
 
         void run();
+
     };
 }
 

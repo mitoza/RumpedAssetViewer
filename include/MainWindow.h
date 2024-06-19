@@ -13,11 +13,13 @@ namespace rumpedav {
 
     class MainWindow : public BaseWindow {
     public:
-        explicit MainWindow();
+        explicit MainWindow(Context &_context);
 
-        void run() override;
+        void create() override;
 
         void resize(sf::Vector2u size) override;
+
+        void destroy() override;
 
     };
 }

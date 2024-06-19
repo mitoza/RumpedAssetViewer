@@ -6,8 +6,7 @@
 
 namespace rumpedav {
     ApplicationConfig::ApplicationConfig(int argc, char *argv[]) {
-        tgui::Theme theme();
-
+        //tgui::Theme theme();
 
     }
 

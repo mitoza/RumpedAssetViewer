@@ -8,21 +8,22 @@
 #include "ApplicationConfig.h"
 
 namespace rumpedav {
-    class Application;
 
     class Context {
-        friend class Application;
 
     protected:
-        static ApplicationConfig config;
+        ApplicationConfig config;
 
     public:
+
         Context();
+        explicit Context(ApplicationConfig &_config);
 
         virtual ~Context();
 
-        [[nodiscard]] static ApplicationConfig &Config();
+        [[nodiscard]] ApplicationConfig &getConfig();
     };
+
 }
 
 #endif //CONTEXT_H

@@ -52,33 +52,44 @@
 
 
 namespace rumpedav {
-    class BaseWindow : public Context {
-        static std::vector<std::shared_ptr<BaseWindow>> m_windows;
-        static size_t currentWindowIndex;
+
+    class BaseWindow {
+        //static std::vector<std::shared_ptr<BaseWindow>> m_windows;
+        //static size_t currentWindowIndex;
+
+        //static void addWindow(std::unique_ptr<BaseWindow> &window);
 
     protected:
+        ApplicationConfig config;
         sf::Thread thread;
         sf::RenderWindow window;
         tgui::Gui gui;
 
-        virtual void run();
+        void run();
 
     public:
-        BaseWindow();
+        BaseWindow(Context &_context);
         ~BaseWindow();
 
         [[nodiscard]] sf::RenderWindow &Window();
 
         [[nodiscard]] tgui::Gui &Gui();
 
+        virtual void create();
+
         virtual void resize(sf::Vector2u size);
+
+        virtual void destroy();
 
         size_t show(bool runThread);
 
         void close(size_t index);
 
-        static void closeAll();
     };
+
+    //std::vector<std::shared_ptr<BaseWindow>> BaseWindow::m_windows;
+    //size_t BaseWindow::currentWindowIndex = -1;
+
 }
 
 #endif //BASEWINDOW_H

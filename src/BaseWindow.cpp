@@ -2,12 +2,13 @@
 // Created by mito on 19.06.2024.
 //
 
+#include <iostream>
 #include "../include/BaseWindow.h"
 
 namespace rumpedav {
 
-    BaseWindow::BaseWindow()
-        : config, thread(&BaseWindow::run, this) {
+    BaseWindow::BaseWindow(Context &_context)
+        : config(_context.getConfig()), thread(&BaseWindow::run, this) {
         window.create({320, 240}, "New Window");
         gui.setWindow(window);
 
@@ -26,6 +27,8 @@ namespace rumpedav {
     }
 
     void BaseWindow::run() {
+        std::cout << "Run!" << std::endl;
+        create();
         while (window.isOpen()) {
             sf::Event event;
             while (window.pollEvent(event)) {
@@ -45,20 +48,26 @@ namespace rumpedav {
             gui.draw();
             window.display();
         }
+        std::cout << "EndRun!" << std::endl;
+    }
+
+    void BaseWindow::create() {
     }
 
     void BaseWindow::resize(sf::Vector2u size) {
     }
 
+    void BaseWindow::destroy() {
+    }
+
     size_t BaseWindow::show(const bool runThread  = true) {
         if (runThread) {
-            m_windows.push_back(std::unique_ptr<BaseWindow>(this));
             thread.launch();
         } else {
             run();
         }
-        currentWindowIndex = m_windows.size() - 1;
-        return currentWindowIndex;
+        //currentWindowIndex = m_windows.size() - 1;
+        return 0;
     }
 
     void BaseWindow::close(size_t index) {
@@ -70,12 +79,9 @@ namespace rumpedav {
 
     }
 
-    void BaseWindow::closeAll() {
-        for(const auto & window : m_windows) {
-            window->window.close();
-        }
-        m_windows.clear();
-    }
+//    void BaseWindow::addWindow(std::unique_ptr<BaseWindow> &window) {
+//        //m_windows.push_back(std::unique_ptr<BaseWindow>(window));
+//    }
 
 }
 
