@@ -16,7 +16,7 @@ namespace rumpedav {
 
     void Application::run() {
         MainWindow mainWindow(context);
-        mainWindow.show(false);
+        mainWindow.show(true);
     }
 
 }

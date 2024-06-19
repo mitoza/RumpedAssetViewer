@@ -54,22 +54,20 @@
 namespace rumpedav {
 
     class BaseWindow {
-        //static std::vector<std::shared_ptr<BaseWindow>> m_windows;
-        //static size_t currentWindowIndex;
-
-        //static void addWindow(std::unique_ptr<BaseWindow> &window);
 
     protected:
+        Context context;
         ApplicationConfig config;
         sf::Thread thread;
         sf::RenderWindow window;
         tgui::Gui gui;
 
+        volatile bool mainThread = true;
+        size_t threadCounter = 0;
         void run();
 
     public:
-        BaseWindow(Context &_context);
-        ~BaseWindow();
+        explicit BaseWindow(Context &_context);
 
         [[nodiscard]] sf::RenderWindow &Window();
 
@@ -77,13 +75,13 @@ namespace rumpedav {
 
         virtual void create();
 
-        virtual void resize(sf::Vector2u size);
-
         virtual void destroy();
 
-        size_t show(bool runThread);
+        virtual void resize(sf::Vector2u size);
 
-        void close(size_t index);
+        virtual void handleEvent(sf::Event &event);
+
+        void show(bool _mainThread = false);
 
     };
 

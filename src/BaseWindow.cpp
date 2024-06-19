@@ -8,15 +8,14 @@
 namespace rumpedav {
 
     BaseWindow::BaseWindow(Context &_context)
-        : config(_context.getConfig()), thread(&BaseWindow::run, this) {
-        window.create({320, 240}, "New Window");
-        gui.setWindow(window);
+            : context(_context),
+              config(_context.getConfig()),
+              thread(&BaseWindow::run, this) {
+//        window.create({320, 240}, "New Window");
+//        gui.setWindow(window);
 
     }
 
-    BaseWindow::~BaseWindow() {
-
-    };
 
     sf::RenderWindow &BaseWindow::Window() {
         return window;
@@ -27,25 +26,21 @@ namespace rumpedav {
     }
 
     void BaseWindow::run() {
-        std::cout << "Run!" << std::endl;
+        std::cout << "Run! Thread:" << ++threadCounter << std::endl;
         create();
+        sf::Event event;
+
+        //sf::RenderWindow window2(config.getVideoMode(), config.getTitle(), config.getStyle());
+
         while (window.isOpen()) {
-            sf::Event event;
-            while (window.pollEvent(event)) {
-                gui.handleEvent(event);
-
-                switch (event.type) {
-                    case sf::Event::Closed:
-                        window.close();
-                    break;
-
-                    default:
-                        break;
+            if (this->mainThread) {
+                while (window.pollEvent(event)) {
+                    this->handleEvent(event);
+                    gui.handleEvent(event);
                 }
             }
-
             window.clear();
-            gui.draw();
+            if (this->mainThread) gui.draw();
             window.display();
         }
         std::cout << "EndRun!" << std::endl;
@@ -54,29 +49,24 @@ namespace rumpedav {
     void BaseWindow::create() {
     }
 
-    void BaseWindow::resize(sf::Vector2u size) {
-    }
-
     void BaseWindow::destroy() {
     }
 
-    size_t BaseWindow::show(const bool runThread  = true) {
-        if (runThread) {
-            thread.launch();
-        } else {
-            run();
-        }
-        //currentWindowIndex = m_windows.size() - 1;
-        return 0;
+    void BaseWindow::resize(sf::Vector2u size) {
     }
 
-    void BaseWindow::close(size_t index) {
-        // TODO implmentation
-        // Close window
-        // Stop thread
-        // Remove window
-        // Remove thread
+    void BaseWindow::handleEvent(sf::Event &event) {
 
+    }
+
+    void BaseWindow::show(const bool _mainThread) {
+        this->mainThread = _mainThread;
+        std::cout << "Main: " << ++threadCounter << std::endl;
+        if (mainThread) {
+            run();
+        } else {
+            thread.launch();
+        }
     }
 
 //    void BaseWindow::addWindow(std::unique_ptr<BaseWindow> &window) {
