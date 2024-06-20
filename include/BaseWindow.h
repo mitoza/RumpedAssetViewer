@@ -58,16 +58,13 @@ namespace rumpedav {
     protected:
         Context context;
         ApplicationConfig config;
-        sf::Thread thread;
         sf::RenderWindow window;
         tgui::Gui gui;
-
-        volatile bool mainThread = true;
-        size_t threadCounter = 0;
+        BaseWindow *parent = nullptr;
         void run();
 
     public:
-        explicit BaseWindow(Context &_context);
+        explicit BaseWindow(Context &_context, BaseWindow *parent = nullptr);
 
         [[nodiscard]] sf::RenderWindow &Window();
 
@@ -81,12 +78,9 @@ namespace rumpedav {
 
         virtual void handleEvent(sf::Event &event);
 
-        void show(bool _mainThread = false);
+        void show();
 
     };
-
-    //std::vector<std::shared_ptr<BaseWindow>> BaseWindow::m_windows;
-    //size_t BaseWindow::currentWindowIndex = -1;
 
 }
 

@@ -15,7 +15,7 @@ namespace rumpedav {
 
     class MainWindow : public BaseWindow {
     public:
-        explicit MainWindow(Context &_context);
+        explicit MainWindow(Context &_context, BaseWindow *parent = nullptr);
 
         void create() override;
 

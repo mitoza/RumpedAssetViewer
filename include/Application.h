@@ -9,7 +9,6 @@
 #include "Context.h"
 
 namespace rumpedav {
-    class Context;
 
     class Application {
         Context context;

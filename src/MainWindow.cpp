@@ -7,16 +7,17 @@
 #include <iostream>
 
 namespace rumpedav {
-    MainWindow::MainWindow(Context &_context) : BaseWindow(_context) {
-
-        window.create(config.getVideoMode(), config.getTitle(), config.getStyle());
-        gui.setWindow(window);
-
-        window.setVerticalSyncEnabled(config.isVSync());
-        window.setFramerateLimit(config.getFramerateLimit());
+    MainWindow::MainWindow(Context &_context, BaseWindow *parent)
+        : BaseWindow(_context, parent) {
     }
 
     void MainWindow::create() {
+        window.create(config.getVideoMode(), config.getTitle(), config.getStyle());
+        window.setVerticalSyncEnabled(config.isVSync());
+        window.setFramerateLimit(config.getFramerateLimit());
+        //window.setIcon()
+        gui.setWindow(window);
+
         try {
             const tgui::Panel::Ptr mainTopPanel = tgui::Panel::create();
             gui.add(mainTopPanel, WNAME_MAIN_TOP_PANEL);
@@ -29,13 +30,8 @@ namespace rumpedav {
             const tgui::Button::Ptr btnOpen = tgui::Button::create();
             btnOpen->setText("Open");
             btnOpen->onClick([&] {
-                BaseWindow baseWindow(context);
-                baseWindow.show();
-
-//                sf::RenderWindow wn(sf::VideoMode(300, 400), "WND");
-//                wn.clear();
-//                wn.display();
-
+                MainWindow mainWindow(context, this);
+                mainWindow.show();
             });
             mainTopPanel->add(btnOpen, WNAME_MAIN_BTN_OPEN);
 
@@ -73,9 +69,7 @@ namespace rumpedav {
             case sf::Event::KeyPressed:
                 switch(event.key.code) {
                     case sf::Keyboard::Key::Space:
-                        //window.setActive(false);
-                        //DialogWindow dialogWindow(context);
-                        //dialogWindow.show();
+
                         break;
                 }
                 break;

@@ -9,8 +9,11 @@
 
 namespace rumpedav {
 
-    class Context {
+    //class BaseWindow;
 
+    class Context {
+        friend class Application;
+    //    std::vector<BaseWindow> m_windows;
     protected:
         ApplicationConfig config;
 

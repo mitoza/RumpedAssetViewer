@@ -7,13 +7,10 @@
 
 namespace rumpedav {
 
-    BaseWindow::BaseWindow(Context &_context)
+    BaseWindow::BaseWindow(Context &_context, BaseWindow *parent)
             : context(_context),
-              config(_context.getConfig()),
-              thread(&BaseWindow::run, this) {
-//        window.create({320, 240}, "New Window");
-//        gui.setWindow(window);
-
+              parent(parent),
+              config(_context.getConfig()) {
     }
 
 
@@ -26,21 +23,17 @@ namespace rumpedav {
     }
 
     void BaseWindow::run() {
-        std::cout << "Run! Thread:" << ++threadCounter << std::endl;
         create();
         sf::Event event;
-
-        //sf::RenderWindow window2(config.getVideoMode(), config.getTitle(), config.getStyle());
+        std::cout << "Run!" << std::endl;
 
         while (window.isOpen()) {
-            if (this->mainThread) {
-                while (window.pollEvent(event)) {
-                    this->handleEvent(event);
-                    gui.handleEvent(event);
-                }
+            while (window.pollEvent(event)) {
+                this->handleEvent(event);
+                gui.handleEvent(event);
             }
             window.clear();
-            if (this->mainThread) gui.draw();
+            gui.draw();
             window.display();
         }
         std::cout << "EndRun!" << std::endl;
@@ -59,14 +52,8 @@ namespace rumpedav {
 
     }
 
-    void BaseWindow::show(const bool _mainThread) {
-        this->mainThread = _mainThread;
-        std::cout << "Main: " << ++threadCounter << std::endl;
-        if (mainThread) {
+    void BaseWindow::show() {
             run();
-        } else {
-            thread.launch();
-        }
     }
 
 //    void BaseWindow::addWindow(std::unique_ptr<BaseWindow> &window) {
