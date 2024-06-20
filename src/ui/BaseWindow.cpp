@@ -9,8 +9,8 @@ namespace rumpedav {
 
     BaseWindow::BaseWindow(Context &_context, BaseWindow *parent)
             : context(_context),
-              parent(parent),
-              config(_context.getConfig()) {
+              config(_context.getConfig()),
+              parent(parent) {
     }
 
 
@@ -18,7 +18,7 @@ namespace rumpedav {
         return window;
     }
 
-    sf::WindowHandle BaseWindow::Handle() {
+    sf::WindowHandle BaseWindow::Handle() const {
         return window.getSystemHandle();
     }
 
@@ -57,7 +57,13 @@ namespace rumpedav {
     }
 
     void BaseWindow::handleEvent(sf::Event &event) {
-
+        switch (event.type) {
+            case sf::Event::Closed:
+                window.close();
+            break;
+            default:
+                break;
+        }
     }
 
     void BaseWindow::show() {

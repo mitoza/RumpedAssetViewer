@@ -21,6 +21,7 @@ namespace rumpedav {
         //    std::cout << "cant load texture from file " << std::endl;
         //    window.setIcon(60,60,WindowIcon.getPixelsPtr());
         gui.setWindow(window);
+        gui.setFont(config.getFont());
         window.setIcon(24, 24, Icons::getIcon(IconType::CROSS_BLACK_256).getData()->backendTexture->getPixels());
 
         try {
@@ -76,29 +77,28 @@ namespace rumpedav {
         // MenuBar
         const tgui::MenuBar::Ptr mainMenuBar = gui.get<tgui::MenuBar>(WNAME_MAIN_MENU_BAR);
         mainMenuBar->setRenderer(config.getTheme().getRenderer("MenuBar"));
-        mainMenuBar->setSize({width, 24});
-        mainMenuBar->setPosition(24, 0);
+        mainMenuBar->setSize({width, SIZE_24});
+        mainMenuBar->setPosition(SIZE_24, 0);
 
         // TopPanel
         const tgui::Panel::Ptr mainTopPanel = gui.get<tgui::Panel>(WNAME_MAIN_TOP_PANEL);
         mainTopPanel->setRenderer(config.getTheme().getRenderer("Panel"));
-        mainTopPanel->setSize({width, 48});
-        mainTopPanel->setPosition({0, 24});
+        mainTopPanel->setSize({width, SIZE_42});
+        mainTopPanel->setPosition({0, SIZE_24});
 
         const tgui::BitmapButton::Ptr btnClose = gui.get<tgui::BitmapButton>(WNAME_MAIN_BTN_CLOSE);
-        btnClose->setSize({48, 48});
+        btnClose->setSize({SIZE_42, SIZE_42});
         btnClose->setPosition(mainTopPanel->getSize().x - btnClose->getSize().x, 0);
 
         const tgui::Button::Ptr btnOpen = gui.get<tgui::Button>(WNAME_MAIN_BTN_OPEN);
-        btnOpen->setSize(48, 48);
+        btnOpen->setSize(SIZE_42, SIZE_42);
         btnOpen->setPosition(btnClose->getPosition().x - btnOpen->getSize().x, 0);
 
         // ProjectPanel
-
         const tgui::Panel::Ptr mainProjectPanel = gui.get<tgui::Panel>(WNAME_MAIN_PROJECT_PANEL);
         mainProjectPanel->setRenderer(config.getTheme().getRenderer("Panel"));
-        mainProjectPanel->setSize({48, height - (24 + 48)});
-        mainProjectPanel->setPosition({0, 24 + 48});
+        mainProjectPanel->setSize({SIZE_42, height - (SIZE_24 + SIZE_42)});
+        mainProjectPanel->setPosition({0, SIZE_24 + SIZE_42});
 
     }
 
@@ -107,23 +107,7 @@ namespace rumpedav {
     }
 
     void MainWindow::handleEvent(sf::Event &event) {
-        switch (event.type) {
-            case sf::Event::Closed:
-                window.close();
-                break;
-            case sf::Event::KeyPressed:
-                switch (event.key.code) {
-                    case sf::Keyboard::Key::Space:
-
-                        break;
-                }
-                break;
-            case sf::Event::MouseMoved:
-                std::cout << event.mouseMove.x << " " << event.mouseMove.y << std::endl;
-                break;
-            default:
-                break;
-        }
+        BaseWindow::handleEvent(event);
     }
 
 }

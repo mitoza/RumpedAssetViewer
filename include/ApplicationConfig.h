@@ -14,13 +14,29 @@
 
 namespace rumpedav {
 
+#define SIZE_2 2
+#define SIZE_4 4
+#define SIZE_8 8
+#define SIZE_12 12
+#define SIZE_16 16
+#define SIZE_20 20
+#define SIZE_24 24
+#define SIZE_28 28
+#define SIZE_32 32
+#define SIZE_36 38
+#define SIZE_42 42
+#define SIZE_48 48
+#define SIZE_56 56
+#define SIZE_64 64
+
     class Themes;
 
     class ApplicationConfig {
 
-        unsigned int w_width = 800;
-        unsigned int w_height = 600;
+        unsigned int w_width = 1024;
+        unsigned int w_height = 768;
         tgui::Theme theme;
+        tgui::Font font;
 
     public:
         ApplicationConfig() = default;
@@ -38,6 +54,8 @@ namespace rumpedav {
         static unsigned int getFramerateLimit();
 
         tgui::Theme &getTheme();
+
+        tgui::Font &getFont();
 
 
         // Default theme renderers

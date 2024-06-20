@@ -70,7 +70,7 @@ namespace rumpedav {
 
         [[nodiscard]] sf::RenderWindow &Window();
 
-        sf::WindowHandle Handle();
+        sf::WindowHandle Handle() const;
 
         [[nodiscard]] tgui::Gui &Gui();
 
