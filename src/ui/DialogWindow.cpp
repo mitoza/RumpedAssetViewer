@@ -2,7 +2,7 @@
 // Created by Dmitry Velychko on 20.06.2024.
 //
 
-#include "../include/DialogWindow.h"
+#include "../../include/ui/DialogWindow.h"
 
 namespace rumpedav {
 
@@ -19,8 +19,8 @@ namespace rumpedav {
         BaseWindow::destroy();
     }
 
-    void DialogWindow::resize(sf::Vector2u size) {
-        BaseWindow::resize(size);
+    void DialogWindow::resize(unsigned int width, unsigned int height) {
+        BaseWindow::resize(width, height);
     }
 
     void DialogWindow::handleEvent(sf::Event &event) {

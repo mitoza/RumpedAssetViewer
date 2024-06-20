@@ -6,8 +6,7 @@
 
 namespace rumpedav {
     ApplicationConfig::ApplicationConfig(int argc, char *argv[]) {
-        //tgui::Theme theme();
-
+        theme = getLightTheme();
     }
 
     ApplicationConfig &ApplicationConfig::load() {
@@ -35,4 +34,25 @@ namespace rumpedav {
     unsigned int ApplicationConfig::getFramerateLimit() {
         return 60;
     }
+
+    tgui::Theme &ApplicationConfig::getTheme() {
+        return theme;
+    }
+
+    tgui::Theme ApplicationConfig::getLightTheme() {
+        tgui::Theme lightTheme;
+        auto menuBarRenderer = std::make_shared<tgui::MenuBarRenderer>();
+        menuBarRenderer->setBackgroundColor(tgui::Color(175, 175, 175));
+        lightTheme.addRenderer("MenuBar", menuBarRenderer->getData());
+        //lightTheme.getRenderer("MenuBar")->propertyValuePairs["BackgroundColor"] = tgui::Color(175, 175, 175);
+
+        return lightTheme;
+    }
+
+    tgui::Theme ApplicationConfig::getDarkTheme() {
+        tgui::Theme darkTheme;
+        return darkTheme;
+    }
+
+
 }

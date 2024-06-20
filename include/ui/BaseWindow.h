@@ -44,23 +44,24 @@
  */
 
 
-#include <TGUI/TGUI.hpp>
-#include <TGUI/Backend/SFML-Graphics.hpp>
-#include <TGUI/Widgets/Button.hpp>
-#include <TGUI/Widgets/CheckBox.hpp>
-#include "Context.h"
+#include "TGUI/TGUI.hpp"
+#include "TGUI/Backend/SFML-Graphics.hpp"
+#include "TGUI/Widgets/Button.hpp"
+#include "TGUI/Widgets/CheckBox.hpp"
+#include "../Context.h"
 
 
 namespace rumpedav {
 
     class BaseWindow {
-
+        std::vector<std::shared_ptr<BaseWindow>> childWindows;
     protected:
         Context context;
         ApplicationConfig config;
         sf::RenderWindow window;
         tgui::Gui gui;
         BaseWindow *parent = nullptr;
+
         void run();
 
     public:
@@ -68,13 +69,15 @@ namespace rumpedav {
 
         [[nodiscard]] sf::RenderWindow &Window();
 
+        sf::WindowHandle Handle();
+
         [[nodiscard]] tgui::Gui &Gui();
 
         virtual void create();
 
         virtual void destroy();
 
-        virtual void resize(sf::Vector2u size);
+        virtual void resize(unsigned int width, unsigned int height);
 
         virtual void handleEvent(sf::Event &event);
 

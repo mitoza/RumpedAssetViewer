@@ -22,8 +22,6 @@ ELSE ()
 ENDIF ()
 
 
-file(GLOB_RECURSE USER_SOURCES ./src/*.cpp)
-
 include(FetchContent)
 # SFML https://www.sfml-dev.org/tutorials/2.6/
 FetchContent_Declare(SFML
@@ -45,8 +43,18 @@ FetchContent_MakeAvailable(
         #        EnTT
 )
 
-file(GLOB_RECURSE SRC_FILES ./src/*.cpp)
-file(GLOB_RECURSE INCLUDE_DIR ./include)
+file(GLOB_RECURSE SRC_FILES
+        ./src/*.cpp
+        ./src/ui/*.cpp
+        ./src/ui/*.cpp
+)
+
+file(GLOB_RECURSE INCLUDE_DIR
+        ./include
+        ./include/ui
+        ./include/data
+)
+
 IF (WIN32 AND (CMAKE_BUILD_TYPE MATCHES Release))
     add_executable(${CMAKE_PROJECT_NAME} WIN32
             main.cpp

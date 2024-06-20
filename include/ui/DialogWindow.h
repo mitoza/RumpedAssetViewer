@@ -6,7 +6,7 @@
 #define ASSETVIEWER_DIALOGWINDOW_H
 
 #include "BaseWindow.h"
-#include "Context.h"
+#include "../Context.h"
 
 namespace rumpedav {
 
@@ -19,7 +19,7 @@ namespace rumpedav {
 
         void destroy() override;
 
-        void resize(sf::Vector2u size) override;
+        void resize(unsigned int width, unsigned int height) override;
 
         void handleEvent(sf::Event &event) override;
     };

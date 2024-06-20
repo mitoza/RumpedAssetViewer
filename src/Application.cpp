@@ -4,7 +4,7 @@
 
 #include "../include/Application.h"
 
-#include "../include/MainWindow.h"
+#include "../include/ui/MainWindow.h"
 
 namespace rumpedav {
     Application::Application(ApplicationConfig &_config) {

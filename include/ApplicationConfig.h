@@ -16,6 +16,7 @@ namespace rumpedav {
 
         unsigned int w_width = 800;
         unsigned int w_height = 600;
+        tgui::Theme theme;
 
     public:
         ApplicationConfig() = default;
@@ -26,11 +27,13 @@ namespace rumpedav {
 
         [[nodiscard]] sf::VideoMode getVideoMode() const;
 
+
         static std::string getTitle();
         static bool isVSync();
         static unsigned int getStyle();
         static unsigned int getFramerateLimit();
 
+        tgui::Theme &getTheme();
         static tgui::Theme getLightTheme();
         static tgui::Theme getDarkTheme();
 

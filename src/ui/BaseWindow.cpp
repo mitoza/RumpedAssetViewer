@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "../include/BaseWindow.h"
+#include "../../include/ui/BaseWindow.h"
 
 namespace rumpedav {
 
@@ -18,6 +18,10 @@ namespace rumpedav {
         return window;
     }
 
+    sf::WindowHandle BaseWindow::Handle() {
+        return window.getSystemHandle();
+    }
+
     tgui::Gui &BaseWindow::Gui() {
         return gui;
     }
@@ -29,8 +33,12 @@ namespace rumpedav {
 
         while (window.isOpen()) {
             while (window.pollEvent(event)) {
-                this->handleEvent(event);
+                if (event.type == sf::Event::Resized) {
+                    resize(event.size.width, event.size.height);
+                }
                 gui.handleEvent(event);
+                this->handleEvent(event);
+
             }
             window.clear();
             gui.draw();
@@ -45,7 +53,7 @@ namespace rumpedav {
     void BaseWindow::destroy() {
     }
 
-    void BaseWindow::resize(sf::Vector2u size) {
+    void BaseWindow::resize(unsigned int width, unsigned int height) {
     }
 
     void BaseWindow::handleEvent(sf::Event &event) {
