@@ -9,9 +9,13 @@
 #include "SFML/Window/VideoMode.hpp"
 #include "SFML/Graphics.hpp"
 #include "TGUI/TGUI.hpp"
+#include "./data/Themes.h"
 
 
 namespace rumpedav {
+
+    class Themes;
+
     class ApplicationConfig {
 
         unsigned int w_width = 800;
@@ -34,8 +38,6 @@ namespace rumpedav {
         static unsigned int getFramerateLimit();
 
         tgui::Theme &getTheme();
-        static tgui::Theme getLightTheme();
-        static tgui::Theme getDarkTheme();
 
 
         // Default theme renderers

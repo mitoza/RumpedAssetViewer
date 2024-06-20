@@ -6,7 +6,7 @@
 
 namespace rumpedav {
     ApplicationConfig::ApplicationConfig(int argc, char *argv[]) {
-        theme = getLightTheme();
+        theme = Themes::Light();
         tgui::ToolTip::setInitialDelay(sf::milliseconds(300));
         tgui::ToolTip::setDistanceToMouse({4, 8});
     }
@@ -42,22 +42,7 @@ namespace rumpedav {
         return theme;
     }
 
-    tgui::Theme ApplicationConfig::getLightTheme() {
 
-        const tgui::Color backgroundColor = tgui::Color();
-        tgui::Theme lightTheme;
-        auto menuBarRenderer = std::make_shared<tgui::MenuBarRenderer>();
-        menuBarRenderer->setBackgroundColor(tgui::Color(175, 175, 175));
-        lightTheme.addRenderer("MenuBar", menuBarRenderer->getData());
-        //lightTheme.getRenderer("MenuBar")->propertyValuePairs["BackgroundColor"] = tgui::Color(175, 175, 175);
-
-        return lightTheme;
-    }
-
-    tgui::Theme ApplicationConfig::getDarkTheme() {
-        tgui::Theme darkTheme;
-        return darkTheme;
-    }
 
 
 }

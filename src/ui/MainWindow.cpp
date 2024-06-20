@@ -21,7 +21,7 @@ namespace rumpedav {
         //    std::cout << "cant load texture from file " << std::endl;
         //    window.setIcon(60,60,WindowIcon.getPixelsPtr());
         gui.setWindow(window);
-        window.setIcon(24, 24, Icons::cross().getData()->backendTexture->getPixels());
+        window.setIcon(24, 24, Icons::getIcon(IconType::CROSS_BLACK_256).getData()->backendTexture->getPixels());
 
         try {
             // MenuBar
@@ -46,7 +46,7 @@ namespace rumpedav {
             btnCloseToolTip->setRenderer(config.getTheme().getRenderer("ToolTip"));
             btnCloseToolTip->setText("Close");
             const tgui::BitmapButton::Ptr btnClose = tgui::BitmapButton::create();
-            btnClose->setImage(Icons::cross());
+            btnClose->setImage(Icons::getIcon(IconType::CROSS_BLACK_256));
             btnClose->setImageScaling(0.5f);
             btnClose->setToolTip(btnCloseToolTip);
             btnClose->onClick([&] { window.close(); });
