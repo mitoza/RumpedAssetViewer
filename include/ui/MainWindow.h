@@ -15,8 +15,11 @@ namespace rumpedav {
 #define WNAME_MAIN_TOP_PANEL "w_main_top_panel"
 #define WNAME_MAIN_BTN_CLOSE "w_main_btn_close"
 #define WNAME_MAIN_BTN_OPEN "w_main_btn_open"
+#define WNAME_MAIN_PROJECT_PANEL "w_main_project_panel"
 
     class MainWindow : public BaseWindow {
+        bool topToolbarPress = false;
+
     public:
         explicit MainWindow(Context &_context, BaseWindow *parent = nullptr);
 

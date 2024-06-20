@@ -7,6 +7,7 @@
 
 /*
  *  https://tgui.eu/documentation/latest-stable/annotated.html
+ *  https://tgui.eu/tutorials/latest-stable/widgets-overview/
  *  Standard TGUI Simple Widgets List:
  *      ButtonBase, Button, BitmapButton, EditBox, CheckBox, ChatBox(text, string),
  *      ColorPicker, CustomWidgetForBindings, EditBox, EditBoxSlider, FileDialog,
