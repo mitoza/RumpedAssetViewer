@@ -5,14 +5,22 @@
 #include "../include/Application.h"
 
 namespace rumpedav {
+
+    Application::Application() = default;
+
     Application::Application(ApplicationConfig &_config) {
         context.config = _config;
     }
 
     Application::~Application() = default;
 
-    void Application::run() {
-
+    bool Application::OnInit() {
+        auto *frame = new MainFrame();
+        frame->Show();
+        return true;
+        //return wxAppConsoleBase::OnInit();
     }
+
+
 
 }
