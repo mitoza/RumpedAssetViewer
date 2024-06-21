@@ -4,8 +4,6 @@
 
 #include "../include/Application.h"
 
-#include "../include/ui/MainWindow.h"
-
 namespace rumpedav {
     Application::Application(ApplicationConfig &_config) {
         context.config = _config;
@@ -14,8 +12,7 @@ namespace rumpedav {
     Application::~Application() = default;
 
     void Application::run() {
-        MainWindow mainWindow(context);
-        mainWindow.show();
+
     }
 
 }

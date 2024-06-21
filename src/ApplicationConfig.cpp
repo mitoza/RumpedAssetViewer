@@ -6,9 +6,6 @@
 
 namespace rumpedav {
     ApplicationConfig::ApplicationConfig(int argc, char *argv[]) {
-        theme = Themes::Light();
-        tgui::ToolTip::setInitialDelay(sf::milliseconds(300));
-        tgui::ToolTip::setDistanceToMouse({4, 8});
 
     }
 
@@ -39,11 +36,4 @@ namespace rumpedav {
         return 60;
     }
 
-    tgui::Theme &ApplicationConfig::getTheme() {
-        return theme;
-    }
-
-    tgui::Font & ApplicationConfig::getFont() {
-        return font;
-    }
 }

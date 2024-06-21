@@ -4,7 +4,6 @@
 
 #ifndef COLOR_H
 #define COLOR_H
-#include <TGUI/Color.hpp>
 
 
 namespace rumpedav {
@@ -33,7 +32,7 @@ namespace rumpedav {
         hotpink, palevioletred
     };
 
-    const static std::uint8_t HtmlColors[][3] = {
+    const static unsigned char HtmlColors[][3] = {
         {255, 255, 255}, {245, 245, 245}, {220, 220, 220}, {211, 211, 211}, {192, 192, 192}, {169, 169, 169},
         {128, 128, 128}, {105, 105, 105}, {0, 0, 0}, {255, 228, 225}, {240, 128, 128}, {250, 128, 114}, {188, 143, 143},
         {255, 99, 71}, {205, 92, 92}, {255, 0, 0}, {178, 34, 34}, {165, 42, 42}, {139, 0, 0}, {128, 0, 0},
@@ -59,7 +58,7 @@ namespace rumpedav {
     };
 
     // Source: https://materialui.co/colors
-    const static std::uint8_t MaterialColors[][3] = {
+    const static unsigned char MaterialColors[][3] = {
         // Red
         {255, 235, 238}, {255, 205, 210}, {239, 154, 154}, {229, 115, 115}, {239, 83, 80}, {244, 67, 54}, {229, 57, 53},
         {211, 47, 47}, {198, 40, 40}, {183, 28, 28}, {255, 138, 128}, {255, 82, 82}, {255, 23, 68}, {213, 0, 0},
@@ -132,15 +131,28 @@ namespace rumpedav {
     };
 
     class Color {
+        unsigned char r = 255;
+        unsigned char g = 255;
+        unsigned char b = 255;
+        unsigned char a = 255;
     public:
-        static tgui::Color Material(MaterialColor materialColor, Variant variant) {
-            const std::uint8_t *color = MaterialColors[
-                14 * static_cast<int>(materialColor) + static_cast<int>(variant)];
+        Color() : r(0), g(0), b(0), a(255) {
+
+        }
+
+        Color(unsigned char _r, unsigned char _g, unsigned char _b)
+        : r(_r), g(_g), b(_b), a(255) {
+
+        }
+
+        static Color Material(MaterialColor materialColor, Variant variant) {
+            const unsigned char *color = MaterialColors[
+                14 * static_cast<unsigned int>(materialColor) + static_cast<unsigned int>(variant)];
             return {color[0], color[1], color[2]};
         }
 
-        static tgui::Color HTML(HtmlColor htmlColor) {
-            const std::uint8_t *color = HtmlColors[static_cast<int>(htmlColor)];
+        static Color HTML(HtmlColor htmlColor) {
+            const unsigned char *color = HtmlColors[static_cast<unsigned int>(htmlColor)];
             return {color[0], color[1], color[2]};
         }
     };

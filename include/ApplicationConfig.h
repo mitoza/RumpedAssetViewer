@@ -8,9 +8,8 @@
 
 #include "SFML/Window/VideoMode.hpp"
 #include "SFML/Graphics.hpp"
-#include "TGUI/TGUI.hpp"
 #include "./data/Themes.h"
-
+#include "./data/Fonts.h"
 
 namespace rumpedav {
 
@@ -29,14 +28,10 @@ namespace rumpedav {
 #define SIZE_56 56
 #define SIZE_64 64
 
-    class Themes;
-
     class ApplicationConfig {
 
         unsigned int w_width = 1024;
         unsigned int w_height = 768;
-        tgui::Theme theme;
-        tgui::Font font;
 
     public:
         ApplicationConfig() = default;
@@ -52,10 +47,6 @@ namespace rumpedav {
         static bool isVSync();
         static unsigned int getStyle();
         static unsigned int getFramerateLimit();
-
-        tgui::Theme &getTheme();
-
-        tgui::Font &getFont();
 
 
         // Default theme renderers

@@ -5,7 +5,6 @@
 #ifndef ASSETVIEWER_ICONS_H
 #define ASSETVIEWER_ICONS_H
 
-#include "TGUI/Texture.hpp"
 
 namespace rumpedav {
 
@@ -21,20 +20,20 @@ namespace rumpedav {
     class Icons {
 
     public:
-        static tgui::Texture getIcon(const IconType iconType) {
-            tgui::CharStringView charStringView;
-            switch (iconType) {
-                case IconType::CROSS_BLACK_256: charStringView = ICON_CROSS_BLACK_256; break;
-            }
-            tgui::Texture icon;
-            icon.loadFromBase64(
-                    charStringView,
-                    {0, 0, 256, 256},
-                    {0, 0, 256, 256},
-                    true
-            );
-            return icon;
-        }
+//        static tgui::Texture getIcon(const IconType iconType) {
+//            tgui::CharStringView charStringView;
+//            switch (iconType) {
+//                case IconType::CROSS_BLACK_256: charStringView = ICON_CROSS_BLACK_256; break;
+//            }
+//            tgui::Texture icon;
+//            icon.loadFromBase64(
+//                    charStringView,
+//                    {0, 0, 256, 256},
+//                    {0, 0, 256, 256},
+//                    true
+//            );
+//            return icon;
+//        }
     };
 
 }
