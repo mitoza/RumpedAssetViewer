@@ -50,7 +50,8 @@ namespace rumpedav {
         menuSamples->Append(ID_MENU_SAMPLE_AUI, "&AUI");
         Bind(wxEVT_MENU, [&](wxCommandEvent &) {
 //            auto *auiFrame = new AuiFrame(this, "AUI");
-            auto *auiFrame = new SampleAuiFrame(this, wxID_ANY, "AUI");
+            auto *auiFrame = new SampleAuiFrame(this, wxID_ANY, "AUI", wxDefaultPosition,
+            wxWindow::FromDIP(wxSize(800, 600), nullptr));
             auiFrame->Show();
         }, ID_MENU_SAMPLE_AUI);
 
