@@ -21,7 +21,7 @@ wxAppInitializer wxTheAppInitializer((wxAppInitializerFunction) wxCreateApp);
 
 
 int main(int argc, char **argv) {
-    //    std::cout << "Hello, Rumped Asset Viewer!" << std::endl;
+        std::cout << "Hello, Rumped Asset Viewer!" << std::endl;
     //    if (!wxInitialize(argc, argv)) {
     //        std::cout << "Not Initialized" << std::endl;
     //    }

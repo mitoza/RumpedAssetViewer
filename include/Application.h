@@ -13,11 +13,13 @@
 namespace rumpedav {
     class MainFrame;
 
-    class Application: public wxApp {
+    class Application : public wxApp {
         Context context;
     public:
         Application();
+
         explicit Application(ApplicationConfig &_config);
+
         ~Application() override;
 
         bool OnInit() override;

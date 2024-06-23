@@ -68,6 +68,7 @@ file(GLOB_RECURSE SRC_FILES
         ./src/ui/*.cpp
         ./src/data/*.cpp
         ./src/utils/*.cpp
+        ./src/ui/samples/*.cpp
 )
 ## Header files directory
 file(GLOB_RECURSE INCLUDE_DIR
