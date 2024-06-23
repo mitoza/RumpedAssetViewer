@@ -5,26 +5,35 @@
 #ifndef ASSETVIEWER_MAINFRAME_H
 #define ASSETVIEWER_MAINFRAME_H
 
-#include "wx/wx.h"
+#include <iostream>
+//#include "wx/wx.h"
 #include "../../include/ui/samples/SampleComboFrame.h"
+#include "../../include/ui/AuiFrame.h"
+#include "../../include/ui/samples/SampleAuiFrame.h"
+
 
 namespace rumpedav {
 
-    enum {
-        ID_MENU_Hello = 1,
-        ID_MENU_QuickHello,
-        ID_MENU_ComboBox,
-
-    };
 
     class MainFrame : public wxFrame {
-        void OnHello(wxCommandEvent& event);
-        void OnExit(wxCommandEvent& event);
-        void OnAbout(wxCommandEvent& event);
+
+        enum {
+            ID_MENU_Hello = 1,
+            ID_MENU_QuickHello,
+            ID_MENU_SAMPLE_ComboBox,
+            ID_MENU_SAMPLE_AUI
+        };
 
     public:
         MainFrame();
-        ~MainFrame() override;
+
+    private:
+        void OnHello(wxCommandEvent &event);
+
+        void OnExit(wxCommandEvent &event);
+
+        void OnAbout(wxCommandEvent &event);
+
     };
 
 }

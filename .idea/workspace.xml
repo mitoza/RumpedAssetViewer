@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -45,28 +45,25 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" BUILD_OPTIONS="-- -j 6 -v" />
       <configuration PROFILE_NAME="Release" ENABLED="true" CONFIG_NAME="Release" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9698f6d-ea40-4b5e-9eed-1d8eff7e0758" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/RumpedAssetViewer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ui/samples/ListViewComboPopup.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ui/samples/SampleComboFrame.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ui/samples/TreeCtrlComboPopup.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/samples/ListViewComboPopup.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/samples/SampleComboFrame.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/samples/TreeCtrlComboPopup.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AssetViewer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/auiclass.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ui/AuiFrame.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ui/samples/SampleAuiFrame.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ui/samples/SettingsPanel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ui/samples/wxSizeReportCtrl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/AuiFrame.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/samples/SampleAuiFrame.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/samples/SettingsPanel.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/samples/wxSizeReportCtrl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Application.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/ui/MainFrame.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/MainFrame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/MainFrame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainFrame.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,10 +84,10 @@
     <option name="minorVersion" value="1.2" />
     <option name="productBranch" value="Classic" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2iHZXnWktayDskpAqh5gak9mwtK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -110,16 +107,24 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CMakeSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include/ui/samples" />
+      <recent name="$PROJECT_DIR$/include/ui" />
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
   <component name="RunManager" selected="CMake Application.AssetViewer">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="AssetViewer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="AssetViewer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="AssetViewer">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssetViewer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="AssetViewer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="AssetViewer">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -310,7 +315,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719149504829</updated>
-      <workItem from="1719149506205" duration="2555000" />
+      <workItem from="1719149506205" duration="6274000" />
+      <workItem from="1719161193432" duration="5220000" />
+      <workItem from="1719166739519" duration="1370000" />
+      <workItem from="1719168119431" duration="6204000" />
     </task>
     <servers />
   </component>

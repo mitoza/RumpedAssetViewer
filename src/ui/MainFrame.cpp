@@ -7,7 +7,8 @@
 namespace rumpedav {
 
     MainFrame::MainFrame()
-            : wxFrame(nullptr, wxID_ANY, "Hello World") {
+            : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
+                      wxWindow::FromDIP(wxSize(800, 600), nullptr)) {
 
         // MenuBar
         auto *menuBar = new wxMenuBar;
@@ -37,11 +38,21 @@ namespace rumpedav {
         // Menu - Samples
         auto *menuSamples = new wxMenu;
         menuBar->Append(menuSamples, "&Samples");
-        menuSamples->Append(ID_MENU_ComboBox, "&Combobox\tCtrl+A");
+
+        // Menu - Samples - ComboBox
+        menuSamples->Append(ID_MENU_SAMPLE_ComboBox, "&Combobox");
         Bind(wxEVT_MENU, [&](wxCommandEvent &) {
-            auto *comboBoxFrame = new SampleComboFrame(this, "Sample ComboBox");
+            auto *comboBoxFrame = new SampleComboFrame(this, "ComboBox");
             comboBoxFrame->Show();
-        }, ID_MENU_ComboBox);
+        }, ID_MENU_SAMPLE_ComboBox);
+
+        // Menu - Samples - AuiFrame
+        menuSamples->Append(ID_MENU_SAMPLE_AUI, "&AUI");
+        Bind(wxEVT_MENU, [&](wxCommandEvent &) {
+//            auto *auiFrame = new AuiFrame(this, "AUI");
+            auto *auiFrame = new SampleAuiFrame(this, wxID_ANY, "AUI");
+            auiFrame->Show();
+        }, ID_MENU_SAMPLE_AUI);
 
         // Menu - Help / About
         auto *menuHelp = new wxMenu;
@@ -53,12 +64,14 @@ namespace rumpedav {
         SetMenuBar(menuBar);
 
         // StatusBar Creation
-        CreateStatusBar();
-        SetStatusText("Welcome to wxWidgets!");
+        CreateStatusBar(2);
+        SetStatusText("Welcome to wxWidgets!", 0);
+        //auto *trackerNode = new wxTrackerNode();
+
+        SetStatusText("Ready", 1);
+        SetMinSize(FromDIP(wxSize(400, 300)));
 
     }
-
-    MainFrame::~MainFrame() = default;
 
     void MainFrame::OnHello(wxCommandEvent &event) {
         std::cout << "Hello Click" << std::endl;

@@ -96,6 +96,18 @@ target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
 
         wx::core
         wx::base
+        wx::aui
+        wx::xrc
+        wx::xml
+        wx::webview
+        wx::stc
+        wx::richtext
+        wx::ribbon
+        wx::qa
+        wx::propgrid
+        wx::media
+        wx::html
+        wx::gl
         wx::net
 )
 target_compile_features(${CMAKE_PROJECT_NAME} PRIVATE cxx_std_17)

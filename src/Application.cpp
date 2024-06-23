@@ -15,11 +15,13 @@ namespace rumpedav {
     Application::~Application() = default;
 
     bool Application::OnInit() {
+        if (!wxApp::OnInit()) return false;
+
         auto *frame = new MainFrame();
+
         frame->Show();
         return true;
     }
-
 
 
 }
