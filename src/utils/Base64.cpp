@@ -6,7 +6,7 @@
 
 namespace rumpedav {
 
-    std::string Base64::encode(const std::uint8_t *data, std::size_t nrBytes) {
+    std::string Base64::encode(const unsigned char *data, std::size_t nrBytes) {
         std::string result;
 
         const std::size_t nrBytesWithPadding = ((nrBytes + 2) / 3) * 3;
@@ -33,15 +33,15 @@ namespace rumpedav {
         return result;
     }
 
-    std::vector<std::uint8_t> Base64::decode(std::string_view data) {
+    std::vector<unsigned char> Base64::decode(std::string_view data) {
         // Reserve space for the result. This might reserve up to 2 bytes more than needed if data is padded.
-        std::vector<std::uint8_t> result;
+        std::vector<unsigned char> result;
         result.reserve(data.length() * 6 / 8);
 
         unsigned int val = 0;
         int valShift = -8;
         for (char c: data) {
-            const std::uint8_t tableIndex = base64InverseCharactersTable[static_cast<std::uint8_t>(c)]; // NOLINT(cppcoreguidelines-pro-bounds-constant-array-index)
+            const unsigned char tableIndex = base64InverseCharactersTable[static_cast<unsigned char>(c)]; // NOLINT(cppcoreguidelines-pro-bounds-constant-array-index)
 
             // Stop the decoding when an invalid character is encountered.
             // Since we don't check for it explicitly, this case will also happen when we reach a padding byte at the end.
@@ -51,7 +51,7 @@ namespace rumpedav {
             val = (val << 6) + tableIndex;
             valShift += 6;
             if (valShift >= 0) {
-                result.push_back(static_cast<std::uint8_t>((val >> valShift) & 0xFF));
+                result.push_back(static_cast<unsigned char>((val >> valShift) & 0xFF));
                 valShift -= 8;
             }
         }

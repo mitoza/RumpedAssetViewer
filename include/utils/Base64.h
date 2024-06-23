@@ -14,7 +14,7 @@ namespace rumpedav {
 
 // The following table maps each character from base64CharactersTable to its index in the table.
 // All characters that don't appear in base64CharactersTable are mapped to 255. Valid indices are in range [0,63]
-    static const std::uint8_t base64InverseCharactersTable[256] = {
+    static const unsigned char base64InverseCharactersTable[256] = {
             255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255,  // [  0 -  15]
             255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255,  // [ 16 -  31]
             255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255,  62, 255, 255, 255,  63,  // [ 32 -  47]
@@ -33,9 +33,9 @@ namespace rumpedav {
             255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255}; // [240 - 255]
     class Base64 {
     public:
-        static std::string encode(const std::uint8_t *data, std::size_t nrBytes);
+        static std::string encode(const unsigned char *data, std::size_t nrBytes);
 
-        static std::vector<std::uint8_t> decode(std::string_view data);
+        static std::vector<unsigned char> decode(std::string_view data);
     };
 
 }
