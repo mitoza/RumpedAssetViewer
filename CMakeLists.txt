@@ -75,6 +75,7 @@ file(GLOB_RECURSE INCLUDE_DIR
         ./include/ui
         ./include/data
         ./include/utils
+        ./include/ui/samples
 )
 
 message(STATUS "Build wsWidgets subdirectory: ${CMAKE_CURRENT_BINARY_DIR}/_deps/wx_widgets-subbuild")

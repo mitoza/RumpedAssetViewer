@@ -18,7 +18,6 @@ namespace rumpedav {
         auto *frame = new MainFrame();
         frame->Show();
         return true;
-        //return wxAppConsoleBase::OnInit();
     }
 
 
