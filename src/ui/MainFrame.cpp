@@ -5,11 +5,51 @@
 #include "../../include/ui/MainFrame.h"
 
 namespace rumpedav {
-
     MainFrame::MainFrame()
-            : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
-                      wxWindow::FromDIP(wxSize(800, 600), nullptr)) {
+        : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
+                  wxWindow::FromDIP(wxSize(800, 600), nullptr)) {
+        initMenuBar();
+        initUI();
 
+    }
+
+    MainFrame::~MainFrame() = default;
+
+    void MainFrame::initUI() {
+        // Window
+        SetMinSize(FromDIP(wxSize(400, 300)));
+        SetThemeEnabled(true);
+
+        // StatusBar
+        CreateStatusBar(2);
+        SetStatusText("Welcome to wxWidgets!", 0);
+        SetStatusText("Ready", 1);
+
+        // AUI
+        m_auiManager.SetManagedWindow(this);
+        //m_auiManager.GetArtProvider()->SetColor(wxAuiPaneDockArtSetting)
+
+        // Create Project Toolbar
+        auto *tbLeft = new wxAuiToolBar(this, ID_TB_LEFT, wxDefaultPosition, wxDefaultSize,
+                                           wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL | wxAUI_TB_PLAIN_BACKGROUND);
+        wxBitmapBundle bmFolder = wxArtProvider::GetBitmapBundle(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(24, 24));
+        tbLeft->AddTool(ID_TB_PROJECT_BTN, _("Project"), bmFolder, _("Open Project"));
+        tbLeft->AddSeparator();
+        tbLeft->AddTool(ID_TB_PROJECT_OPTIONS, _("Options"), wxArtProvider::GetBitmapBundle(wxART_FOLDER), _("Options"));
+        //tbLeft->SetToolDropDown(ID_TB_PROJECT_OPTIONS, true);
+        tbLeft->ToggleTool(ID_TB_PROJECT_OPTIONS, false);
+        tbLeft->SetOverflowVisible(false);
+        tbLeft->Realize();
+
+        // m_auiManager.AddPane(tbProject, wxAuiPaneInfo().
+        //     Name("tbProject").Caption("Sample Vertical Toolbar").Gripper(false).
+        //     ToolbarPane().Right().RightDockable(true).GripperTop(false)
+        //     );
+
+        m_auiManager.Update();
+    }
+
+    void MainFrame::initMenuBar() {
         // MenuBar
         auto *menuBar = new wxMenuBar;
 
@@ -26,6 +66,7 @@ namespace rumpedav {
         menuFile->Append(ID_MENU_QuickHello, "&QuickHello\tCtrl+Q");
         Bind(wxEVT_MENU, [&](wxCommandEvent &) {
             SetStatusText("Quick Help");
+            wxMessageBox(_("wxAUI Demo 1"), _("About wxAUI Demo 1"), wxICON_QUESTION | wxOK, this);
         }, ID_MENU_QuickHello);
 
         // Menu - File - Separator
@@ -49,9 +90,8 @@ namespace rumpedav {
         // Menu - Samples - AuiFrame
         menuSamples->Append(ID_MENU_SAMPLE_AUI, "&AUI");
         Bind(wxEVT_MENU, [&](wxCommandEvent &) {
-//            auto *auiFrame = new AuiFrame(this, "AUI");
             auto *auiFrame = new SampleAuiFrame(this, wxID_ANY, "AUI", wxDefaultPosition,
-            wxWindow::FromDIP(wxSize(800, 600), nullptr));
+                                                wxWindow::FromDIP(wxSize(800, 600), nullptr));
             auiFrame->Show();
         }, ID_MENU_SAMPLE_AUI);
 
@@ -63,16 +103,8 @@ namespace rumpedav {
 
         // Menu Creation
         SetMenuBar(menuBar);
-
-        // StatusBar Creation
-        CreateStatusBar(2);
-        SetStatusText("Welcome to wxWidgets!", 0);
-        //auto *trackerNode = new wxTrackerNode();
-
-        SetStatusText("Ready", 1);
-        SetMinSize(FromDIP(wxSize(400, 300)));
-
     }
+
 
     void MainFrame::OnHello(wxCommandEvent &event) {
         std::cout << "Hello Click" << std::endl;
@@ -83,6 +115,5 @@ namespace rumpedav {
     }
 
     void MainFrame::OnAbout(wxCommandEvent &event) {
-
     }
 }
