@@ -11,6 +11,7 @@
 #include "../../include/ui/samples/SampleComboFrame.h"
 #include "../../include/ui/samples/SampleAuiFrame.h"
 #include "../../include/ui/samples/DndFrame.h"
+#include "wxSFMLCanvas.h"
 
 
 namespace rumpedav {
@@ -34,6 +35,7 @@ namespace rumpedav {
 
     public:
         MainFrame();
+
         ~MainFrame();
 
     private:
@@ -46,6 +48,12 @@ namespace rumpedav {
         void OnExit(wxCommandEvent &event);
 
         void OnAbout(wxCommandEvent &event);
+
+    private:
+
+        wxSFMLCanvas *CreateSFMLControl(const wxSize &size = wxWindow::FromDIP(wxSize(320, 240), nullptr));
+
+        wxSizeReportCtrl *CreateSizeReportCtrl(const wxSize &size = wxWindow::FromDIP(wxSize(80, 80), nullptr));
 
     };
 

@@ -18,11 +18,11 @@ wxDECLARE_EVENT_TABLE();
 
 public:
 
-    wxSizeReportCtrl(wxWindow *parent, wxWindowID id = wxID_ANY,
-                     const wxPoint &pos = wxDefaultPosition,
+    explicit wxSizeReportCtrl(wxWindow *parent, wxWindowID id = wxID_ANY,
+                     const wxPoint &position = wxDefaultPosition,
                      const wxSize &size = wxDefaultSize,
                      wxAuiManager *mgr = nullptr)
-            : wxControl(parent, id, pos, size, wxNO_BORDER) {
+            : wxControl(parent, id, position, size, wxNO_BORDER) {
         m_mgr = mgr;
     }
 

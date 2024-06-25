@@ -6,8 +6,8 @@
 
 namespace rumpedav {
     MainFrame::MainFrame()
-        : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
-                  wxWindow::FromDIP(wxSize(800, 600), nullptr)) {
+            : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
+                      wxWindow::FromDIP(wxSize(800, 600), nullptr)) {
         initMenuBar();
         initUI();
 
@@ -30,20 +30,31 @@ namespace rumpedav {
         //m_auiManager.GetArtProvider()->SetColor(wxAuiPaneDockArtSetting)
 
         // Create Project Toolbar
-        auto *tbLeft = new wxAuiToolBar(this, ID_TB_LEFT, wxDefaultPosition, wxDefaultSize, //wxSize(wxDefaultSize.GetWidth(), wxGetDisplaySize().GetHeight()),//wxGetDisplaySize(),
-                                           wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL | wxAUI_TB_PLAIN_BACKGROUND);
+        auto *tbLeft = new wxAuiToolBar(this, ID_TB_LEFT, wxDefaultPosition,
+                                        wxDefaultSize, //wxSize(wxDefaultSize.GetWidth(), wxGetDisplaySize().GetHeight()),//wxGetDisplaySize(),
+                                        wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL |
+                                        wxAUI_TB_PLAIN_BACKGROUND);
         wxBitmapBundle bmFolder = wxArtProvider::GetBitmapBundle(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(24, 24));
         tbLeft->AddTool(ID_TB_PROJECT_BTN, _("Project"), bmFolder, _("Open Project"));
         tbLeft->AddSeparator();
-        tbLeft->AddTool(ID_TB_PROJECT_OPTIONS, _("Options"), wxArtProvider::GetBitmapBundle(wxART_FOLDER), _("Options"));
+        tbLeft->AddTool(ID_TB_PROJECT_OPTIONS, _("Options"), wxArtProvider::GetBitmapBundle(wxART_FOLDER),
+                        _("Options"));
         //tbLeft->SetToolDropDown(ID_TB_PROJECT_OPTIONS, true);
         tbLeft->ToggleTool(ID_TB_PROJECT_OPTIONS, false);
         tbLeft->SetOverflowVisible(false);
         tbLeft->Realize();
 
-         m_auiManager.AddPane(tbLeft, wxAuiPaneInfo().
-             Name("tbProject").Caption("Sample Vertical Toolbar").
-             ToolbarPane().Right());
+        m_auiManager.AddPane(tbLeft, wxAuiPaneInfo().
+                Name("tbProject").Caption("Sample Vertical Toolbar").
+                ToolbarPane().Right());
+
+        // Add SFML Canvas Panel
+        m_auiManager.AddPane(CreateSFMLControl(), wxAuiPaneInfo().
+                        Name("sfml_content").CenterPane().Float());
+
+        m_auiManager.AddPane(CreateSizeReportCtrl(), wxAuiPaneInfo().
+                Name("size_report_content").CenterPane().Float());
+
 
         m_auiManager.Update();
     }
@@ -122,4 +133,18 @@ namespace rumpedav {
 
     void MainFrame::OnAbout(wxCommandEvent &event) {
     }
+
+    wxSFMLCanvas *MainFrame::CreateSFMLControl(const wxSize &size) {
+        auto *control = new wxSFMLCanvas(this, wxID_ANY, wxDefaultPosition, size,
+                                         wxNO_BORDER, &m_auiManager);
+        return control;
+    }
+
+    wxSizeReportCtrl *MainFrame::CreateSizeReportCtrl(const wxSize &size) {
+        auto *ctrl = new wxSizeReportCtrl(this, wxID_ANY,
+                                                      wxDefaultPosition,
+                                                      size, &m_auiManager);
+        return ctrl;
+    }
+
 }

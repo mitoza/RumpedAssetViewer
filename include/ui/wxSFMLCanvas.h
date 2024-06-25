@@ -7,6 +7,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <wx/wx.h>
+#include "wx/aui/framemanager.h"
+#include "wx/dcbuffer.h"
 
 #ifdef __WXGTK__
 #include <gdk/gdkx.h>
@@ -16,26 +18,29 @@
 
 
 class wxSFMLCanvas : public wxControl, public sf::RenderWindow {
+//wxDECLARE_EVENT_TABLE();
 
+    wxAuiManager *m_mgr;
+
+public:
+    explicit wxSFMLCanvas(wxWindow *Parent = nullptr, wxWindowID id = wxID_ANY,
+            const wxPoint &position = wxDefaultPosition,
+            const wxSize &Size = wxDefaultSize,
+            long Style = wxNO_BORDER, wxAuiManager *mgr = nullptr);
+
+    ~wxSFMLCanvas() override;
+
+private :
     virtual void OnUpdate();
 
     void OnIdle(wxIdleEvent &idleEvent);
 
-    void OnPaint(wxPaintEvent &paintEvent);
+    void OnPaint(wxPaintEvent &WXUNUSED(paintEvent));
 
-    void OnEraseBackground(wxEraseEvent &eraseEvent);
+    void OnEraseBackground(wxEraseEvent &WXUNUSED(eraseEvent));
 
-    void OnSize(wxSizeEvent &sizeEvent);
+    void OnSize(wxSizeEvent &WXUNUSED(sizeEvent));
 
-public:
-    explicit wxSFMLCanvas(
-            wxWindow *Parent = nullptr,
-            wxWindowID Id = -1,
-            const wxPoint &Position = wxDefaultPosition,
-            const wxSize &Size = wxDefaultSize,
-            long Style = 0);
-
-    ~wxSFMLCanvas() override;
 };
 
 
