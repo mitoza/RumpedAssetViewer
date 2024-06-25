@@ -9,8 +9,8 @@
 #include "wx/wx.h"
 #include "wx/aui/aui.h"
 #include "../../include/ui/samples/SampleComboFrame.h"
-
 #include "../../include/ui/samples/SampleAuiFrame.h"
+#include "../../include/ui/samples/DndFrame.h"
 
 
 namespace rumpedav {

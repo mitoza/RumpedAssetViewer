@@ -102,7 +102,7 @@ SampleAuiFrame::SampleAuiFrame(wxWindow *parent,
     m_mgr.SetManagedWindow(this);
 
     // set frame icon
-    //SetIcon(wxIcon(sample_xpm));
+    SetIcon(wxIcon(sample_xpm));
 
     // set up default notebook style
     m_notebook_style = wxAUI_NB_DEFAULT_STYLE | wxAUI_NB_TAB_EXTERNAL_MOVE | wxNO_BORDER;

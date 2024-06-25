@@ -30,7 +30,7 @@ namespace rumpedav {
         //m_auiManager.GetArtProvider()->SetColor(wxAuiPaneDockArtSetting)
 
         // Create Project Toolbar
-        auto *tbLeft = new wxAuiToolBar(this, ID_TB_LEFT, wxDefaultPosition, wxDefaultSize,
+        auto *tbLeft = new wxAuiToolBar(this, ID_TB_LEFT, wxDefaultPosition, wxDefaultSize, //wxSize(wxDefaultSize.GetWidth(), wxGetDisplaySize().GetHeight()),//wxGetDisplaySize(),
                                            wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL | wxAUI_TB_PLAIN_BACKGROUND);
         wxBitmapBundle bmFolder = wxArtProvider::GetBitmapBundle(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(24, 24));
         tbLeft->AddTool(ID_TB_PROJECT_BTN, _("Project"), bmFolder, _("Open Project"));
@@ -41,10 +41,9 @@ namespace rumpedav {
         tbLeft->SetOverflowVisible(false);
         tbLeft->Realize();
 
-        // m_auiManager.AddPane(tbProject, wxAuiPaneInfo().
-        //     Name("tbProject").Caption("Sample Vertical Toolbar").Gripper(false).
-        //     ToolbarPane().Right().RightDockable(true).GripperTop(false)
-        //     );
+         m_auiManager.AddPane(tbLeft, wxAuiPaneInfo().
+             Name("tbProject").Caption("Sample Vertical Toolbar").
+             ToolbarPane().Right());
 
         m_auiManager.Update();
     }
@@ -93,6 +92,13 @@ namespace rumpedav {
             auto *auiFrame = new SampleAuiFrame(this, wxID_ANY, "AUI", wxDefaultPosition,
                                                 wxWindow::FromDIP(wxSize(800, 600), nullptr));
             auiFrame->Show();
+        }, ID_MENU_SAMPLE_AUI);
+
+        // Menu - Samples - DragFrame
+        menuSamples->Append(ID_MENU_SAMPLE_AUI, "&DragAndDrop");
+        Bind(wxEVT_MENU, [&](wxCommandEvent &) {
+            auto *dndFrame = new DnDFrame(this);
+            dndFrame->Show();
         }, ID_MENU_SAMPLE_AUI);
 
         // Menu - Help / About

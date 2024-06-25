@@ -17,6 +17,10 @@ namespace rumpedav {
     bool Application::OnInit() {
         if (!wxApp::OnInit()) return false;
 
+#if wxUSE_LIBPNG
+        //wxImage::AddHandler(new wxPNGHandler);
+#endif
+
         auto *frame = new MainFrame();
 
         frame->Show();

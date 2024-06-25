@@ -12,148 +12,35 @@
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="AssetViewer" targetName="wxjpeg" />
-      <config projectName="AssetViewer" targetName="scroll" />
       <config projectName="AssetViewer" targetName="wxpng" />
-      <config projectName="AssetViewer" targetName="caret" />
-      <config projectName="AssetViewer" targetName="erase" />
-      <config projectName="AssetViewer" targetName="animate" />
-      <config projectName="AssetViewer" targetName="keyboard" />
       <config projectName="AssetViewer" targetName="wxribbon" />
-      <config projectName="AssetViewer" targetName="artprov" />
-      <config projectName="AssetViewer" targetName="clipboard" />
-      <config projectName="AssetViewer" targetName="collpane" />
-      <config projectName="AssetViewer" targetName="oleauto" />
-      <config projectName="AssetViewer" targetName="penguin" />
-      <config projectName="AssetViewer" targetName="memcheck" />
-      <config projectName="AssetViewer" targetName="mediaplayer" />
       <config projectName="AssetViewer" targetName="wxscintilla" />
-      <config projectName="AssetViewer" targetName="baseipcserver" />
-      <config projectName="AssetViewer" targetName="combo" />
-      <config projectName="AssetViewer" targetName="except" />
-      <config projectName="AssetViewer" targetName="renddll" />
-      <config projectName="AssetViewer" targetName="ribbondemo" />
-      <config projectName="AssetViewer" targetName="ownerdrw" />
-      <config projectName="AssetViewer" targetName="htlbox" />
-      <config projectName="AssetViewer" targetName="listctrl" />
-      <config projectName="AssetViewer" targetName="cube" />
-      <config projectName="AssetViewer" targetName="taskbar" />
-      <config projectName="AssetViewer" targetName="validate" />
-      <config projectName="AssetViewer" targetName="internat" />
-      <config projectName="AssetViewer" targetName="sfml-main" />
       <config projectName="AssetViewer" targetName="wxregex" />
-      <config projectName="AssetViewer" targetName="vscroll" />
       <config projectName="AssetViewer" targetName="wxstc" />
-      <config projectName="AssetViewer" targetName="client" />
       <config projectName="AssetViewer" targetName="sfml-graphics" />
-      <config projectName="AssetViewer" targetName="text" />
-      <config projectName="AssetViewer" targetName="docview" />
-      <config projectName="AssetViewer" targetName="event" />
-      <config projectName="AssetViewer" targetName="webrequest" />
       <config projectName="AssetViewer" targetName="wxxml" />
-      <config projectName="AssetViewer" targetName="fswatcher" />
       <config projectName="AssetViewer" targetName="wxcore" />
-      <config projectName="AssetViewer" targetName="thread" />
-      <config projectName="AssetViewer" targetName="minimal" />
-      <config projectName="AssetViewer" targetName="console" />
       <config projectName="AssetViewer" targetName="wxhtml" />
-      <config projectName="AssetViewer" targetName="auidemo" />
-      <config projectName="AssetViewer" targetName="ipcserver" />
-      <config projectName="AssetViewer" targetName="dataview" />
-      <config projectName="AssetViewer" targetName="splitter" />
-      <config projectName="AssetViewer" targetName="nativdlg" />
-      <config projectName="AssetViewer" targetName="baseclient" />
-      <config projectName="AssetViewer" targetName="imagesample" />
-      <config projectName="AssetViewer" targetName="pyramid" />
-      <config projectName="AssetViewer" targetName="life" />
-      <config projectName="AssetViewer" targetName="joytest" />
-      <config projectName="AssetViewer" targetName="webviewsample" />
-      <config projectName="AssetViewer" targetName="about" />
-      <config projectName="AssetViewer" targetName="splash" />
       <config projectName="AssetViewer" targetName="wxpropgrid" />
-      <config projectName="AssetViewer" targetName="wxzlib" />
-      <config projectName="AssetViewer" targetName="statbar" />
-      <config projectName="AssetViewer" targetName="htmlprinting" />
-      <config projectName="AssetViewer" targetName="layout" />
-      <config projectName="AssetViewer" targetName="shaped" />
-      <config projectName="AssetViewer" targetName="popup" />
-      <config projectName="AssetViewer" targetName="taskbarbutton" />
       <config projectName="AssetViewer" targetName="wxrc" />
       <config projectName="AssetViewer" targetName="wxbase" />
-      <config projectName="AssetViewer" targetName="dnd" />
-      <config projectName="AssetViewer" targetName="baseipcclient" />
-      <config projectName="AssetViewer" targetName="notebook" />
-      <config projectName="AssetViewer" targetName="xrcdemo" />
-      <config projectName="AssetViewer" targetName="zip" />
       <config projectName="AssetViewer" targetName="sfml-audio" />
       <config projectName="AssetViewer" targetName="sfml-network" />
-      <config projectName="AssetViewer" targetName="isosurf" />
-      <config projectName="AssetViewer" targetName="helpview" />
-      <config projectName="AssetViewer" targetName="sdk_exe" />
-      <config projectName="AssetViewer" targetName="secretstore" />
       <config projectName="AssetViewer" targetName="wxxrc" />
-      <config projectName="AssetViewer" targetName="svg" />
-      <config projectName="AssetViewer" targetName="treectrl" />
-      <config projectName="AssetViewer" targetName="dialup" />
-      <config projectName="AssetViewer" targetName="toolbar" />
-      <config projectName="AssetViewer" targetName="bombs" />
-      <config projectName="AssetViewer" targetName="regtest" />
       <config projectName="AssetViewer" targetName="wxqa" />
-      <config projectName="AssetViewer" targetName="wxpoem" />
-      <config projectName="AssetViewer" targetName="archive" />
-      <config projectName="AssetViewer" targetName="wizard" />
       <config projectName="AssetViewer" targetName="AssetViewer" />
-      <config projectName="AssetViewer" targetName="exec" />
       <config projectName="AssetViewer" targetName="wxadv" />
       <config projectName="AssetViewer" targetName="wxtiff" />
       <config projectName="AssetViewer" targetName="wxaui" />
-      <config projectName="AssetViewer" targetName="baseserver" />
-      <config projectName="AssetViewer" targetName="render" />
       <config projectName="AssetViewer" targetName="wxgl" />
-      <config projectName="AssetViewer" targetName="dialogs" />
-      <config projectName="AssetViewer" targetName="treelist" />
-      <config projectName="AssetViewer" targetName="server" />
-      <config projectName="AssetViewer" targetName="htmlhelp" />
-      <config projectName="AssetViewer" targetName="widget" />
       <config projectName="AssetViewer" targetName="wxnet" />
       <config projectName="AssetViewer" targetName="wxwebview" />
-      <config projectName="AssetViewer" targetName="forty" />
-      <config projectName="AssetViewer" targetName="wxexpat" />
       <config projectName="AssetViewer" targetName="sfml-system" />
-      <config projectName="AssetViewer" targetName="propgriddemo" />
-      <config projectName="AssetViewer" targetName="uiaction" />
-      <config projectName="AssetViewer" targetName="dragimag" />
-      <config projectName="AssetViewer" targetName="virtual" />
       <config projectName="AssetViewer" targetName="wxmedia" />
-      <config projectName="AssetViewer" targetName="stctest" />
-      <config projectName="AssetViewer" targetName="power" />
-      <config projectName="AssetViewer" targetName="menu" />
-      <config projectName="AssetViewer" targetName="sashtest" />
-      <config projectName="AssetViewer" targetName="display" />
-      <config projectName="AssetViewer" targetName="richtextdemo" />
-      <config projectName="AssetViewer" targetName="font" />
-      <config projectName="AssetViewer" targetName="mdi" />
-      <config projectName="AssetViewer" targetName="wrapsizer" />
       <config projectName="AssetViewer" targetName="wxrichtext" />
-      <config projectName="AssetViewer" targetName="fractal" />
-      <config projectName="AssetViewer" targetName="grid" />
       <config projectName="AssetViewer" targetName="wx_widgets-populate" />
-      <config projectName="AssetViewer" targetName="widgets" />
-      <config projectName="AssetViewer" targetName="htmltest" />
       <config projectName="AssetViewer" targetName="sfml-window" />
-      <config projectName="AssetViewer" targetName="config" />
-      <config projectName="AssetViewer" targetName="taborder" />
-      <config projectName="AssetViewer" targetName="typetest" />
-      <config projectName="AssetViewer" targetName="my_dll" />
-      <config projectName="AssetViewer" targetName="access" />
-      <config projectName="AssetViewer" targetName="wx_exe" />
-      <config projectName="AssetViewer" targetName="preferences" />
-      <config projectName="AssetViewer" targetName="printing" />
-      <config projectName="AssetViewer" targetName="calendar" />
-      <config projectName="AssetViewer" targetName="drawingsample" />
-      <config projectName="AssetViewer" targetName="ipcclient" />
-      <config projectName="AssetViewer" targetName="sound" />
       <config projectName="AssetViewer" targetName="uninstall" />
-      <config projectName="AssetViewer" targetName="helpdemo" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -164,12 +51,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9698f6d-ea40-4b5e-9eed-1d8eff7e0758" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/dndclass.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ui/samples/DnDFrame.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/samples/DnDFrame.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ui/AuiFrame.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/ui/MainFrame.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/MainFrame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ui/samples/wxSizeReportCtrl.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/samples/wxSizeReportCtrl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/AuiFrame.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ui/samples/SampleAuiFrame.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/samples/SampleAuiFrame.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/MainFrame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainFrame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/samples/SampleAuiFrame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/samples/SampleAuiFrame.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,25 +88,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "CMake Application.AssetViewer.executor": "Run",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CMakeSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CMake Application.AssetViewer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/include/ui/samples" />
@@ -225,412 +115,12 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.AssetViewer">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AssetViewer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="AssetViewer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="AssetViewer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="about" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="about" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="about">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="access" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="access" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="access">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="animate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="animate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="animate">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="archive" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="archive" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="archive">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="artprov" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="artprov" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="artprov">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="auidemo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="auidemo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="auidemo">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="baseclient" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="baseclient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="baseclient">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="baseipcclient" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="baseipcclient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="baseipcclient">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="baseipcserver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="baseipcserver" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="baseipcserver">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="baseserver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="baseserver" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="baseserver">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="bombs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="bombs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="bombs">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="calendar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="calendar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="calendar">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="caret" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="caret" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="caret">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="client">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="clipboard" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="clipboard" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="clipboard">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="collpane" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="collpane" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="collpane">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="combo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="combo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="combo">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="config" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="config" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="config">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="console" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="console" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="console">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cube" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="cube" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="cube">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dataview" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="dataview" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="dataview">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dialogs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="dialogs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="dialogs">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dialup" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="dialup" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="dialup">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="display" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="display" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="display">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dnd" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="dnd" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="dnd">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="docview" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="docview" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="docview">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dragimag" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="dragimag" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="dragimag">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="drawingsample" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="drawingsample" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="drawingsample">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="erase" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="erase" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="erase">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="event" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="event" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="event">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="except" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="except" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="except">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="exec" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="exec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="exec">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="font" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="font" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="font">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="forty" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="forty" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="forty">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="fractal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="fractal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="fractal">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="fswatcher" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="fswatcher" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="fswatcher">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="grid" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="grid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="grid">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="helpdemo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="helpdemo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="helpdemo">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="helpview" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="helpview" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="helpview">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="htlbox" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="htlbox" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="htlbox">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="htmlhelp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="htmlhelp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="htmlhelp">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="htmlprinting" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="htmlprinting" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="htmlprinting">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="htmltest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="htmltest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="htmltest">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="imagesample" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="imagesample" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="imagesample">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="internat" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="internat" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="internat">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ipcclient" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="ipcclient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="ipcclient">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ipcserver" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="ipcserver" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="ipcserver">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="isosurf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="isosurf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="isosurf">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="joytest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="joytest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="joytest">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="keyboard" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="keyboard" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="keyboard">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="layout" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="layout" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="layout">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="life" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="life" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="life">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="listctrl" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="listctrl" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="listctrl">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mdi" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="mdi" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="mdi">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mediaplayer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="mediaplayer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="mediaplayer">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="memcheck" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="memcheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="memcheck">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="menu" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="menu" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="menu">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="minimal" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="minimal" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="minimal">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="my_dll" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="my_dll" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="nativdlg" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="nativdlg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="nativdlg">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="notebook" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="notebook" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="notebook">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="oleauto" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="oleauto" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="oleauto">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ownerdrw" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="ownerdrw" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="ownerdrw">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="penguin" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="penguin" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="penguin">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="popup" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="popup" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="popup">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="power" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="power" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="power">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="preferences" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="preferences" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="preferences">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="printing" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="printing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="printing">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="propgriddemo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="propgriddemo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="propgriddemo">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="pyramid" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="pyramid" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="pyramid">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="regtest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="regtest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="regtest">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="renddll" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="renddll" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="render" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="render" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="render">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ribbondemo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="ribbondemo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="ribbondemo">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="richtextdemo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="richtextdemo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="richtextdemo">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sashtest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="sashtest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="sashtest">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="scroll" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="scroll" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="scroll">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sdk_exe" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="sdk_exe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="sdk_exe">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="secretstore" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="secretstore" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="secretstore">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="server" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="server" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="server">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -641,11 +131,6 @@
       </method>
     </configuration>
     <configuration name="sfml-graphics" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="sfml-graphics" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sfml-main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="sfml-main" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -665,142 +150,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="shaped" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="shaped" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="shaped">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sound" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="sound" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="sound">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="splash" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="splash" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="splash">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="splitter" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="splitter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="splitter">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="statbar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="statbar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="statbar">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="stctest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="stctest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="stctest">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="svg" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="svg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="svg">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="taborder" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="taborder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="taborder">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="taskbar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="taskbar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="taskbar">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="taskbarbutton" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="taskbarbutton" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="taskbarbutton">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="text" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="text" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="text">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="thread" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="thread" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="thread">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="toolbar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="toolbar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="toolbar">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="treectrl" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="treectrl" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="treectrl">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="treelist" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="treelist" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="treelist">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="typetest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="typetest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="typetest">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="uiaction" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="uiaction" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="uiaction">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="validate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="validate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="validate">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="virtual" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="virtual" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="virtual">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="vscroll" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="vscroll" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="vscroll">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="webrequest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="webrequest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="webrequest">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="webviewsample" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="webviewsample" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="webviewsample">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="widget" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="widget" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="widget">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="widgets" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="widgets" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="widgets">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="wizard" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="wizard" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="wizard">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="wrapsizer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="wrapsizer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="wrapsizer">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="wx_exe" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="wx_exe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="wx_exe">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -826,11 +176,6 @@
       </method>
     </configuration>
     <configuration name="wxcore" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="wxcore" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="wxexpat" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="wxexpat" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -861,11 +206,6 @@
       </method>
     </configuration>
     <configuration name="wxpng" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="wxpng" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="wxpoem" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="wxpoem" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="wxpoem">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -930,148 +270,23 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="wxzlib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="wxzlib" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="xrcdemo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="xrcdemo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="xrcdemo">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="zip" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="zip" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="zip">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="CMake Application.AssetViewer" />
       <item itemvalue="CMake Application.sfml-audio" />
       <item itemvalue="CMake Application.sfml-graphics" />
-      <item itemvalue="CMake Application.sfml-main" />
       <item itemvalue="CMake Application.sfml-network" />
       <item itemvalue="CMake Application.sfml-system" />
       <item itemvalue="CMake Application.sfml-window" />
-      <item itemvalue="CMake Application.about" />
-      <item itemvalue="CMake Application.access" />
-      <item itemvalue="CMake Application.animate" />
-      <item itemvalue="CMake Application.archive" />
-      <item itemvalue="CMake Application.artprov" />
-      <item itemvalue="CMake Application.auidemo" />
-      <item itemvalue="CMake Application.baseclient" />
-      <item itemvalue="CMake Application.baseipcclient" />
-      <item itemvalue="CMake Application.baseipcserver" />
-      <item itemvalue="CMake Application.baseserver" />
-      <item itemvalue="CMake Application.bombs" />
-      <item itemvalue="CMake Application.calendar" />
-      <item itemvalue="CMake Application.caret" />
-      <item itemvalue="CMake Application.client" />
-      <item itemvalue="CMake Application.clipboard" />
-      <item itemvalue="CMake Application.collpane" />
-      <item itemvalue="CMake Application.combo" />
-      <item itemvalue="CMake Application.config" />
-      <item itemvalue="CMake Application.console" />
-      <item itemvalue="CMake Application.cube" />
-      <item itemvalue="CMake Application.dataview" />
-      <item itemvalue="CMake Application.dialogs" />
-      <item itemvalue="CMake Application.dialup" />
-      <item itemvalue="CMake Application.display" />
-      <item itemvalue="CMake Application.dnd" />
-      <item itemvalue="CMake Application.docview" />
-      <item itemvalue="CMake Application.dragimag" />
-      <item itemvalue="CMake Application.drawingsample" />
-      <item itemvalue="CMake Application.erase" />
-      <item itemvalue="CMake Application.event" />
-      <item itemvalue="CMake Application.except" />
-      <item itemvalue="CMake Application.exec" />
-      <item itemvalue="CMake Application.font" />
-      <item itemvalue="CMake Application.forty" />
-      <item itemvalue="CMake Application.fractal" />
-      <item itemvalue="CMake Application.fswatcher" />
-      <item itemvalue="CMake Application.grid" />
-      <item itemvalue="CMake Application.helpdemo" />
-      <item itemvalue="CMake Application.helpview" />
-      <item itemvalue="CMake Application.htlbox" />
-      <item itemvalue="CMake Application.htmlhelp" />
-      <item itemvalue="CMake Application.htmlprinting" />
-      <item itemvalue="CMake Application.htmltest" />
-      <item itemvalue="CMake Application.imagesample" />
-      <item itemvalue="CMake Application.internat" />
-      <item itemvalue="CMake Application.ipcclient" />
-      <item itemvalue="CMake Application.ipcserver" />
-      <item itemvalue="CMake Application.isosurf" />
-      <item itemvalue="CMake Application.joytest" />
-      <item itemvalue="CMake Application.keyboard" />
-      <item itemvalue="CMake Application.layout" />
-      <item itemvalue="CMake Application.life" />
-      <item itemvalue="CMake Application.listctrl" />
-      <item itemvalue="CMake Application.mdi" />
-      <item itemvalue="CMake Application.mediaplayer" />
-      <item itemvalue="CMake Application.memcheck" />
-      <item itemvalue="CMake Application.menu" />
-      <item itemvalue="CMake Application.minimal" />
-      <item itemvalue="CMake Application.my_dll" />
-      <item itemvalue="CMake Application.nativdlg" />
-      <item itemvalue="CMake Application.notebook" />
-      <item itemvalue="CMake Application.oleauto" />
-      <item itemvalue="CMake Application.ownerdrw" />
-      <item itemvalue="CMake Application.penguin" />
-      <item itemvalue="CMake Application.popup" />
-      <item itemvalue="CMake Application.power" />
-      <item itemvalue="CMake Application.preferences" />
-      <item itemvalue="CMake Application.printing" />
-      <item itemvalue="CMake Application.propgriddemo" />
-      <item itemvalue="CMake Application.pyramid" />
-      <item itemvalue="CMake Application.regtest" />
-      <item itemvalue="CMake Application.renddll" />
-      <item itemvalue="CMake Application.render" />
-      <item itemvalue="CMake Application.ribbondemo" />
-      <item itemvalue="CMake Application.richtextdemo" />
-      <item itemvalue="CMake Application.sashtest" />
-      <item itemvalue="CMake Application.scroll" />
-      <item itemvalue="CMake Application.sdk_exe" />
-      <item itemvalue="CMake Application.secretstore" />
-      <item itemvalue="CMake Application.server" />
-      <item itemvalue="CMake Application.shaped" />
-      <item itemvalue="CMake Application.sound" />
-      <item itemvalue="CMake Application.splash" />
-      <item itemvalue="CMake Application.splitter" />
-      <item itemvalue="CMake Application.statbar" />
-      <item itemvalue="CMake Application.stctest" />
-      <item itemvalue="CMake Application.svg" />
-      <item itemvalue="CMake Application.taborder" />
-      <item itemvalue="CMake Application.taskbar" />
-      <item itemvalue="CMake Application.taskbarbutton" />
-      <item itemvalue="CMake Application.text" />
-      <item itemvalue="CMake Application.thread" />
-      <item itemvalue="CMake Application.toolbar" />
-      <item itemvalue="CMake Application.treectrl" />
-      <item itemvalue="CMake Application.treelist" />
-      <item itemvalue="CMake Application.typetest" />
-      <item itemvalue="CMake Application.uiaction" />
-      <item itemvalue="CMake Application.validate" />
-      <item itemvalue="CMake Application.virtual" />
-      <item itemvalue="CMake Application.vscroll" />
-      <item itemvalue="CMake Application.webrequest" />
-      <item itemvalue="CMake Application.webviewsample" />
-      <item itemvalue="CMake Application.widget" />
-      <item itemvalue="CMake Application.widgets" />
-      <item itemvalue="CMake Application.wizard" />
-      <item itemvalue="CMake Application.wrapsizer" />
-      <item itemvalue="CMake Application.wx_exe" />
       <item itemvalue="CMake Application.wxadv" />
       <item itemvalue="CMake Application.wxaui" />
       <item itemvalue="CMake Application.wxbase" />
       <item itemvalue="CMake Application.wxcore" />
-      <item itemvalue="CMake Application.wxexpat" />
       <item itemvalue="CMake Application.wxgl" />
       <item itemvalue="CMake Application.wxhtml" />
       <item itemvalue="CMake Application.wxjpeg" />
       <item itemvalue="CMake Application.wxmedia" />
       <item itemvalue="CMake Application.wxnet" />
       <item itemvalue="CMake Application.wxpng" />
-      <item itemvalue="CMake Application.wxpoem" />
       <item itemvalue="CMake Application.wxpropgrid" />
       <item itemvalue="CMake Application.wxqa" />
       <item itemvalue="CMake Application.wxregex" />
@@ -1083,9 +298,6 @@
       <item itemvalue="CMake Application.wxwebview" />
       <item itemvalue="CMake Application.wxxml" />
       <item itemvalue="CMake Application.wxxrc" />
-      <item itemvalue="CMake Application.wxzlib" />
-      <item itemvalue="CMake Application.xrcdemo" />
-      <item itemvalue="CMake Application.zip" />
       <item itemvalue="CMake Application.uninstall" />
       <item itemvalue="CMake Application.wxrc" />
       <item itemvalue="CMake Application.wx_widgets-populate" />
