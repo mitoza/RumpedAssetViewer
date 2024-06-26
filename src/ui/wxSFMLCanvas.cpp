@@ -33,9 +33,9 @@ wxSFMLCanvas::~wxSFMLCanvas() {
 }
 
 void wxSFMLCanvas::OnUpdate() {
-    clear(sf::Color::White);
+    clear(sf::Color(rumpedav::Color::Material(rumpedav::MaterialColor::Grey, rumpedav::Variant::_300)));
 
-    sf::CircleShape circle = sf::CircleShape(20, 32);
+    sf::CircleShape circle = sf::CircleShape(20, 6);
     circle.setPosition(50, 50);
     circle.setFillColor(sf::Color::Red);
 

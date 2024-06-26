@@ -9,6 +9,7 @@
 #include <wx/wx.h>
 #include "wx/aui/framemanager.h"
 #include "wx/dcbuffer.h"
+#include "../data/Color.h"
 
 #ifdef __WXGTK__
 #include <gdk/gdkx.h>

@@ -5,6 +5,7 @@
 #ifndef COLOR_H
 #define COLOR_H
 
+#include "SFML/Graphics.hpp"
 
 namespace rumpedav {
     enum class MaterialColor {
@@ -145,13 +146,13 @@ namespace rumpedav {
 
         }
 
-        static Color Material(MaterialColor materialColor, Variant variant) {
+        static sf::Color Material(MaterialColor materialColor, Variant variant) {
             const unsigned char *color = MaterialColors[
                 14 * static_cast<unsigned int>(materialColor) + static_cast<unsigned int>(variant)];
             return {color[0], color[1], color[2]};
         }
 
-        static Color HTML(HtmlColor htmlColor) {
+        static sf::Color HTML(HtmlColor htmlColor) {
             const unsigned char *color = HtmlColors[static_cast<unsigned int>(htmlColor)];
             return {color[0], color[1], color[2]};
         }

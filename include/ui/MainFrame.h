@@ -6,6 +6,8 @@
 #define ASSETVIEWER_MAINFRAME_H
 
 #include <iostream>
+#include <memory>
+
 #include "wx/wx.h"
 #include "wx/aui/aui.h"
 #include "../../include/ui/samples/SampleComboFrame.h"
@@ -15,25 +17,32 @@
 
 
 namespace rumpedav {
+#define PANE_TOOLBAR_TOP "pane_toolbar_top"
+#define PANE_TOOLBAR_LEFT "pane_toolbar_left"
+#define PANE_PROJECT "pane_project"
+#define PANE_CONTENT "pane_content"
+#define PANE_PROPERTIES "pane_properties"
+#define PANE_METADATA "pane_metadata"
 
+    enum {
+        ID_MENU_Hello = wxID_HIGHEST,
+        ID_MENU_QuickHello,
+        ID_MENU_SAMPLE_ComboBox,
+        ID_MENU_SAMPLE_AUI,
+        ID_MENU_SAMPLE_DND,
+
+        ID_TB_LEFT,
+        ID_TB_LEFT_BTN_PROJECT,
+        ID_TB_LEFT_BTN_OPTIONS,
+    };
 
     class MainFrame : public wxFrame {
-
-        enum {
-            ID_MENU_Hello = wxID_HIGHEST,
-            ID_MENU_QuickHello,
-            ID_MENU_SAMPLE_ComboBox,
-            ID_MENU_SAMPLE_AUI,
-            ID_MENU_SAMPLE_DND,
-
-
-            ID_TB_LEFT,
-            ID_TB_PROJECT_BTN,
-            ID_TB_PROJECT_OPTIONS,
-
-        };
-
         wxAuiManager m_auiManager;
+        std::unique_ptr<wxAuiToolBar> m_tbLeft;
+        std::unique_ptr<wxSFMLCanvas> m_pContent;
+        std::unique_ptr<wxTreeCtrl> m_pProject;
+
+
 
     public:
         MainFrame();
@@ -41,9 +50,11 @@ namespace rumpedav {
         ~MainFrame();
 
     private:
-        void initMenuBar();
+        void OnInit();
 
-        void initUI();
+        void OnDestroy();
+
+        void OnPaneClose(wxAuiManagerEvent &evt);
 
         void OnHello(wxCommandEvent &event);
 
@@ -52,13 +63,15 @@ namespace rumpedav {
         void OnAbout(wxCommandEvent &event);
 
     private:
+        void CreateToolbarLeft();
 
-        wxSFMLCanvas *CreateSFMLControl(const wxSize &size = wxWindow::FromDIP(wxSize(320, 240), nullptr));
+        void CreatePanelContent(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
 
-        wxSizeReportCtrl *CreateSizeReportCtrl(const wxSize &size = wxWindow::FromDIP(wxSize(80, 80), nullptr));
+        wxSizeReportCtrl *CreateSizeReportCtrl(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
+
+        void CreatePanelProject(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
 
     };
-
 }
 
 #endif //ASSETVIEWER_MAINFRAME_H
