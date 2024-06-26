@@ -5,9 +5,9 @@
 #include "../../include/ui/wxSFMLCanvas.h"
 
 wxSFMLCanvas::wxSFMLCanvas(wxWindow *parent, wxWindowID id,
-        const wxPoint &position, const wxSize &size,
-        long style, wxAuiManager *mgr)
-        : wxControl(parent, id, position, size, style) {
+                           const wxPoint &position, const wxSize &size,
+                           long style, wxAuiManager *mgr)
+    : wxControl(parent, id, position, size, style) {
 #ifdef __WXGTK__
     // GTK implementation requires to go deeper to find the
     // low-level X11 identifier of the widget
@@ -23,21 +23,33 @@ wxSFMLCanvas::wxSFMLCanvas(wxWindow *parent, wxWindowID id,
 
 #endif
     m_mgr = mgr;
+    m_view = getDefaultView();
+    timer.Start(1);
+
+    Bind(wxEVT_IDLE, &wxSFMLCanvas::OnIdle, this, wxID_ANY);
     Bind(wxEVT_PAINT, &wxSFMLCanvas::OnPaint, this, wxID_ANY);
     Bind(wxEVT_SIZE, &wxSFMLCanvas::OnSize, this, wxID_ANY);
     Bind(wxEVT_ERASE_BACKGROUND, &wxSFMLCanvas::OnEraseBackground, this, wxID_ANY);
+    Bind(wxEVT_TIMER, &wxSFMLCanvas::OnTimer, this, wxID_ANY);
 }
 
 wxSFMLCanvas::~wxSFMLCanvas() {
-
 }
 
 void wxSFMLCanvas::OnUpdate() {
-    clear(sf::Color(rumpedav::Color::Material(rumpedav::MaterialColor::Grey, rumpedav::Variant::_300)));
+
+    clear(sf::Color(rumpedav::Color::Material(rumpedav::MaterialColor::BlueGrey, rumpedav::Variant::_50)));
 
     sf::CircleShape circle = sf::CircleShape(20, 6);
-    circle.setPosition(50, 50);
+    circle.setOrigin(20, 20);
+    circle.setPosition(getSize().x / 2, getSize().y / 2);
+
     circle.setFillColor(sf::Color::Red);
+
+    sf::Event event;
+    while(pollEvent(event)) {
+
+    }
 
     draw(circle);
 }
@@ -64,21 +76,24 @@ void wxSFMLCanvas::OnPaint(wxPaintEvent &paintEvent) {
     texture.create(windowSize.x, windowSize.y);
     texture.update(*this);
     sf::Image image = texture.copyToImage();
-    //Lock();
-    wxBitmap bmp(wxImage(windowSize.x, windowSize.y,
-                         (unsigned char *)image.getPixelsPtr(), true));
-    //Unlock();
+    wxBitmap bmp(wxImage(windowSize.x, windowSize.y, (unsigned char *)image.getPixelsPtr(), true));
     wxBufferedPaintDC dc(this, bmp);
 #endif
 }
 
 void wxSFMLCanvas::OnEraseBackground(wxEraseEvent &eraseEvent) {
-
+    // do nothing
 }
 
 void wxSFMLCanvas::OnSize(wxSizeEvent &sizeEvent) {
-    std::cout << "Resize" << std::endl;
+    m_view.setSize({
+        static_cast<float>(sizeEvent.GetSize().x),
+        static_cast<float>(sizeEvent.GetSize().y)
+    });
+    setView(m_view);
     Refresh();
-    onResize();
 }
 
+void wxSFMLCanvas::OnTimer(wxTimerEvent &) {
+    Refresh();
+}

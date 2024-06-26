@@ -19,15 +19,17 @@
 
 
 class wxSFMLCanvas : public wxControl, public sf::RenderWindow {
-//wxDECLARE_EVENT_TABLE();
+    //wxDECLARE_EVENT_TABLE();
 
+    sf::View m_view;
     wxAuiManager *m_mgr;
+    wxTimer timer;
 
 public:
     explicit wxSFMLCanvas(wxWindow *Parent = nullptr, wxWindowID id = wxID_ANY,
-            const wxPoint &position = wxDefaultPosition,
-            const wxSize &Size = wxDefaultSize,
-            long Style = wxNO_BORDER, wxAuiManager *mgr = nullptr);
+                          const wxPoint &position = wxDefaultPosition,
+                          const wxSize &Size = wxDefaultSize,
+                          long Style = wxNO_BORDER, wxAuiManager *mgr = nullptr);
 
     ~wxSFMLCanvas() override;
 
@@ -42,6 +44,7 @@ private :
 
     void OnSize(wxSizeEvent &WXUNUSED(sizeEvent));
 
+    void OnTimer(wxTimerEvent &WXUNUSED(timerEvent));
 };
 
 

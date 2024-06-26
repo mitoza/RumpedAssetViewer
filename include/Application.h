@@ -18,7 +18,7 @@ namespace rumpedav {
     public:
         Application();
 
-        explicit Application(ApplicationConfig &_config);
+        explicit Application(const ApplicationConfig &_config);
 
         ~Application() override;
 

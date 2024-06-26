@@ -24,18 +24,17 @@ option(wxBUILD_MONOLITHIC "Build a single library" OFF)
 IF (CMAKE_BUILD_TYPE MATCHES Release)
     set(wxBUILD_SAMPLES OFF) #	SOME, ALL or OFF
     option(wxBUILD_DEMOS "Build demo applications" OFF)
-    set(wxBUILD_SHARED ON)
-    option(wxBUILD_MONOLITHIC "Build a single library" OFF)
+    set(wxBUILD_SHARED OFF)
 ELSE ()
-    IF(WIN32)
+    IF (WIN32)
         set(wxBUILD_SAMPLES ALL) #	SOME, ALL or OFF
         option(wxBUILD_DEMOS "Build demo applications" ON)
         set(wxBUILD_SHARED OFF)
-    ELSE()
+    ELSE ()
         set(wxBUILD_SAMPLES OFF) #	SOME, ALL or OFF
         option(wxBUILD_DEMOS "Build demo applications" OFF)
         set(wxBUILD_SHARED ON)
-    ENDIF()
+    ENDIF ()
 ENDIF ()
 
 ## Git Fetch Content
@@ -83,7 +82,11 @@ message(STATUS "Build wsWidgets subdirectory: ${CMAKE_CURRENT_BINARY_DIR}/_deps/
 add_subdirectory(${CMAKE_CURRENT_BINARY_DIR}/_deps/wx_widgets-subbuild)
 
 IF (WIN32)
-    add_executable(${CMAKE_PROJECT_NAME} WIN32 main.cpp ${SRC_FILES})
+    IF (CMAKE_BUILD_TYPE MATCHES Release)
+        add_executable(${CMAKE_PROJECT_NAME} WIN32 main.cpp ${SRC_FILES})
+    ELSE ()
+        add_executable(${CMAKE_PROJECT_NAME} main.cpp ${SRC_FILES})
+    ENDIF ()
 ELSE ()
     add_executable(${CMAKE_PROJECT_NAME} main.cpp ${SRC_FILES})
 ENDIF ()

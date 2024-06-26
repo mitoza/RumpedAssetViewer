@@ -8,7 +8,7 @@ namespace rumpedav {
     MainFrame::MainFrame()
         : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
                   wxWindow::FromDIP(wxSize(800, 600), nullptr),
-                  wxDEFAULT_FRAME_STYLE | wxRESIZE_BORDER // | wxFRAME_TOOL_WINDOW | wxNO_BORDER
+                  wxDEFAULT_FRAME_STYLE// | wxRESIZE_BORDER // | wxFRAME_TOOL_WINDOW | wxNO_BORDER
         ) {
         // Styling
         // https://stackoverflow.com/questions/68088652/create-a-titleless-borderless-draggable-wxframe-in-wxwidgets
@@ -17,6 +17,7 @@ namespace rumpedav {
     }
 
     MainFrame::~MainFrame() {
+        wxFrame::~wxFrame();
         OnDestroy();
     }
 

@@ -8,7 +8,7 @@ namespace rumpedav {
 
     Application::Application() = default;
 
-    Application::Application(ApplicationConfig &_config) {
+    Application::Application(const ApplicationConfig &_config) {
         context.config = _config;
     }
 
@@ -21,9 +21,8 @@ namespace rumpedav {
         //wxImage::AddHandler(new wxPNGHandler);
 #endif
 
-        auto *frame = new MainFrame();
-
-        frame->Show();
+        auto *mainFrame = new MainFrame();
+        mainFrame->Show();
         return true;
     }
 

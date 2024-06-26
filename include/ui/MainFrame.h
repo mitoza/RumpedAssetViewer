@@ -42,12 +42,10 @@ namespace rumpedav {
         std::unique_ptr<wxSFMLCanvas> m_pContent;
         std::unique_ptr<wxTreeCtrl> m_pProject;
 
-
-
     public:
         MainFrame();
 
-        ~MainFrame();
+        ~MainFrame() override;
 
     private:
         void OnInit();
@@ -65,7 +63,7 @@ namespace rumpedav {
     private:
         void CreateToolbarLeft();
 
-        void CreatePanelContent(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
+        void CreatePanelContent(const wxSize &paneSize = wxWindow::FromDIP(wxSize(800, 600), nullptr));
 
         wxSizeReportCtrl *CreateSizeReportCtrl(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
 
