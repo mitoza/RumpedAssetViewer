@@ -24,6 +24,8 @@ namespace rumpedav {
             ID_MENU_QuickHello,
             ID_MENU_SAMPLE_ComboBox,
             ID_MENU_SAMPLE_AUI,
+            ID_MENU_SAMPLE_DND,
+
 
             ID_TB_LEFT,
             ID_TB_PROJECT_BTN,

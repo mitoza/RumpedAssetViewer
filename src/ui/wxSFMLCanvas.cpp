@@ -4,12 +4,6 @@
 
 #include "../../include/ui/wxSFMLCanvas.h"
 
-//wxBEGIN_EVENT_TABLE(wxSFMLCanvas, wxControl)
-//                EVT_PAINT(wxSFMLCanvas::OnPaint)
-//                EVT_SIZE(wxSFMLCanvas::OnSize)
-//                EVT_ERASE_BACKGROUND(wxSFMLCanvas::OnEraseBackground)
-//wxEND_EVENT_TABLE()
-
 wxSFMLCanvas::wxSFMLCanvas(wxWindow *parent, wxWindowID id,
         const wxPoint &position, const wxSize &size,
         long style, wxAuiManager *mgr)
@@ -46,7 +40,6 @@ void wxSFMLCanvas::OnUpdate() {
     circle.setFillColor(sf::Color::Red);
 
     draw(circle);
-    display();
 }
 
 void wxSFMLCanvas::OnIdle(wxIdleEvent &idleEvent) {
@@ -55,23 +48,28 @@ void wxSFMLCanvas::OnIdle(wxIdleEvent &idleEvent) {
 }
 
 void wxSFMLCanvas::OnPaint(wxPaintEvent &paintEvent) {
+    // https://wiki.wxwidgets.org/Making_a_render_loop
+#ifdef __WIN32__
+    wxPaintDC dc(this);
+#endif
 
-    // Let the derived class do its specific stuff
     OnUpdate();
 
+    display();
+
+#ifdef __APPLE__
     sf::Vector2u windowSize = getSize();
 
     sf::Texture texture;
     texture.create(windowSize.x, windowSize.y);
     texture.update(*this);
     sf::Image image = texture.copyToImage();
-
     //Lock();
     wxBitmap bmp(wxImage(windowSize.x, windowSize.y,
                          (unsigned char *)image.getPixelsPtr(), true));
     //Unlock();
-
     wxBufferedPaintDC dc(this, bmp);
+#endif
 }
 
 void wxSFMLCanvas::OnEraseBackground(wxEraseEvent &eraseEvent) {
@@ -81,5 +79,6 @@ void wxSFMLCanvas::OnEraseBackground(wxEraseEvent &eraseEvent) {
 void wxSFMLCanvas::OnSize(wxSizeEvent &sizeEvent) {
     std::cout << "Resize" << std::endl;
     Refresh();
+    onResize();
 }
 

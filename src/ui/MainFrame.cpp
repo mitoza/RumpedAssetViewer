@@ -7,57 +7,16 @@
 namespace rumpedav {
     MainFrame::MainFrame()
             : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
-                      wxWindow::FromDIP(wxSize(800, 600), nullptr)) {
+                      wxWindow::FromDIP(wxSize(800, 600), nullptr),
+                      wxDEFAULT_FRAME_STYLE | wxRESIZE_BORDER // | wxFRAME_TOOL_WINDOW | wxNO_BORDER
+                      ) {
+        // https://stackoverflow.com/questions/68088652/create-a-titleless-borderless-draggable-wxframe-in-wxwidgets
         initMenuBar();
         initUI();
 
     }
 
     MainFrame::~MainFrame() = default;
-
-    void MainFrame::initUI() {
-        // Window
-        SetMinSize(FromDIP(wxSize(400, 300)));
-        SetThemeEnabled(true);
-
-        // StatusBar
-        CreateStatusBar(2);
-        SetStatusText("Welcome to wxWidgets!", 0);
-        SetStatusText("Ready", 1);
-
-        // AUI
-        m_auiManager.SetManagedWindow(this);
-        //m_auiManager.GetArtProvider()->SetColor(wxAuiPaneDockArtSetting)
-
-        // Create Project Toolbar
-        auto *tbLeft = new wxAuiToolBar(this, ID_TB_LEFT, wxDefaultPosition,
-                                        wxDefaultSize, //wxSize(wxDefaultSize.GetWidth(), wxGetDisplaySize().GetHeight()),//wxGetDisplaySize(),
-                                        wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL |
-                                        wxAUI_TB_PLAIN_BACKGROUND);
-        wxBitmapBundle bmFolder = wxArtProvider::GetBitmapBundle(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(24, 24));
-        tbLeft->AddTool(ID_TB_PROJECT_BTN, _("Project"), bmFolder, _("Open Project"));
-        tbLeft->AddSeparator();
-        tbLeft->AddTool(ID_TB_PROJECT_OPTIONS, _("Options"), wxArtProvider::GetBitmapBundle(wxART_FOLDER),
-                        _("Options"));
-        //tbLeft->SetToolDropDown(ID_TB_PROJECT_OPTIONS, true);
-        tbLeft->ToggleTool(ID_TB_PROJECT_OPTIONS, false);
-        tbLeft->SetOverflowVisible(false);
-        tbLeft->Realize();
-
-        m_auiManager.AddPane(tbLeft, wxAuiPaneInfo().
-                Name("tbProject").Caption("Sample Vertical Toolbar").
-                ToolbarPane().Right());
-
-        // Add SFML Canvas Panel
-        m_auiManager.AddPane(CreateSFMLControl(), wxAuiPaneInfo().
-                        Name("sfml_content").CenterPane().Float());
-
-        m_auiManager.AddPane(CreateSizeReportCtrl(), wxAuiPaneInfo().
-                Name("size_report_content").CenterPane().Float());
-
-
-        m_auiManager.Update();
-    }
 
     void MainFrame::initMenuBar() {
         // MenuBar
@@ -110,7 +69,7 @@ namespace rumpedav {
         Bind(wxEVT_MENU, [&](wxCommandEvent &) {
             auto *dndFrame = new DnDFrame(this);
             dndFrame->Show();
-        }, ID_MENU_SAMPLE_AUI);
+        }, ID_MENU_SAMPLE_DND);
 
         // Menu - Help / About
         auto *menuHelp = new wxMenu;
@@ -122,6 +81,57 @@ namespace rumpedav {
         SetMenuBar(menuBar);
     }
 
+    void MainFrame::initUI() {
+        // Window
+        SetMinSize(FromDIP(wxSize(400, 300)));
+        SetThemeEnabled(true);
+
+        // StatusBar
+        CreateStatusBar(2);
+        SetStatusText("Welcome to wxWidgets!", 0);
+        SetStatusText("Ready", 1);
+
+        // AUI
+        m_auiManager.SetManagedWindow(this);
+        //m_auiManager.GetArtProvider()->SetColor(wxAuiPaneDockArtSetting)
+
+        // Create Project Toolbar
+        auto *tbLeft = new wxAuiToolBar(this, ID_TB_LEFT, wxDefaultPosition,
+                                        FromDIP(wxSize(120, 500)),
+                                        //wxGetDisplaySize(),
+                                        wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL |
+                                        wxAUI_TB_PLAIN_BACKGROUND);
+        wxBitmapBundle bmFolder = wxArtProvider::GetBitmapBundle(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(24, 24));
+        tbLeft->AddTool(ID_TB_PROJECT_BTN, _("Project"), bmFolder, _("Open Project"));
+        tbLeft->AddSeparator();
+        tbLeft->AddTool(ID_TB_PROJECT_OPTIONS, _("Options"), wxArtProvider::GetBitmapBundle(wxART_FOLDER),
+                        _("Options"));
+        //tbLeft->SetToolDropDown(ID_TB_PROJECT_OPTIONS, true);
+        tbLeft->ToggleTool(ID_TB_PROJECT_OPTIONS, false);
+        tbLeft->SetOverflowVisible(false);
+        tbLeft->Realize();
+
+        m_auiManager.AddPane(tbLeft, wxAuiPaneInfo().
+                Name("tbProject").Caption("Sample Vertical Toolbar").
+                ToolbarPane()
+                .Maximize()
+                .Gripper(false)
+                .Left()
+                .BestSize(wxSize(32, INT_FAST16_MAX))
+
+                );
+
+        // Add SFML Canvas Panel
+        m_auiManager.AddPane(CreateSFMLControl(), wxAuiPaneInfo().
+                        Name("sfml_content").Caption("SFML Content").
+                        DefaultPane().Row(1));
+
+        m_auiManager.AddPane(CreateSizeReportCtrl(), wxAuiPaneInfo().
+                Name("size_report_content").Caption("Size Report").
+                DefaultPane().Row(0));
+
+        m_auiManager.Update();
+    }
 
     void MainFrame::OnHello(wxCommandEvent &event) {
         std::cout << "Hello Click" << std::endl;
