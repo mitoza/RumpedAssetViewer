@@ -49,6 +49,12 @@ FetchContent_Declare(WX_WIDGETS
         GIT_REPOSITORY https://github.com/wxWidgets/wxWidgets.git
         GIT_TAG 3.2
 )
+# SDL3 https://wiki.libsdl.org/SDL3/FrontPage , https://github.com/topics/sdl3
+FetchContent_Declare(SDL3
+        GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
+        GIT_TAG main
+)
+
 # EnTT https://github.com/skypjack/entt/wiki
 #FetchContent_Declare(EnTT
 #        GIT_REPOSITORY https://github.com/skypjack/entt.git
@@ -58,6 +64,7 @@ FetchContent_Declare(WX_WIDGETS
 FetchContent_MakeAvailable(
         SFML
         WX_WIDGETS
+        SDL3
         #        EnTT
 )
 
@@ -112,5 +119,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
         wx::html
         wx::gl
         wx::net
+
+        sdl::
 )
 target_compile_features(${CMAKE_PROJECT_NAME} PRIVATE cxx_std_17)

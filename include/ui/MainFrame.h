@@ -45,12 +45,8 @@ namespace rumpedav {
     public:
         MainFrame();
 
-        ~MainFrame() override;
-
     private:
         void OnInit();
-
-        void OnDestroy();
 
         void OnPaneClose(wxAuiManagerEvent &evt);
 

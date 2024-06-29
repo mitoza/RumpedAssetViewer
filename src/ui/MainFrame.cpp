@@ -6,19 +6,14 @@
 
 namespace rumpedav {
     MainFrame::MainFrame()
-        : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
-                  wxWindow::FromDIP(wxSize(800, 600), nullptr),
-                  wxDEFAULT_FRAME_STYLE// | wxRESIZE_BORDER // | wxFRAME_TOOL_WINDOW | wxNO_BORDER
-        ) {
+            : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
+                      wxWindow::FromDIP(wxSize(800, 600), nullptr),
+                      wxDEFAULT_FRAME_STYLE// | wxRESIZE_BORDER // | wxFRAME_TOOL_WINDOW | wxNO_BORDER
+    ) {
         // Styling
         // https://stackoverflow.com/questions/68088652/create-a-titleless-borderless-draggable-wxframe-in-wxwidgets
         // https://forums.wxwidgets.org/viewtopic.php?t=44241
         OnInit();
-    }
-
-    MainFrame::~MainFrame() {
-        wxFrame::~wxFrame();
-        OnDestroy();
     }
 
     void MainFrame::OnInit() {
@@ -100,24 +95,22 @@ namespace rumpedav {
         CreatePanelProject();
 
         m_auiManager.AddPane(
-            CreateSizeReportCtrl(), wxAuiPaneInfo().
-            Name("size_report_content").Caption("Size Report").
-            Right().
-            CloseButton(true)
+                CreateSizeReportCtrl(), wxAuiPaneInfo().
+                        Name("size_report_content").Caption("Size Report").
+                        Right().
+                        CloseButton(true)
         );
 
         // Set AUI Flags
         unsigned int flags = m_auiManager.GetFlags();
         flags |= wxAUI_MGR_LIVE_RESIZE; // Allow Live Update of Resize
         m_auiManager.SetFlags(flags);
+
         //m_auiManager.GetArtProvider()->SetColor(wxAuiPaneDockArtSetting)
 
-        Bind(wxEVT_AUI_PANE_CLOSE, MainFrame::OnPaneClose, this);
+        Bind(wxEVT_AUI_PANE_CLOSE, &MainFrame::OnPaneClose, this);
 
         m_auiManager.Update();
-    }
-
-    void MainFrame::OnDestroy() {
     }
 
     void MainFrame::OnPaneClose(wxAuiManagerEvent &evt) {
@@ -143,9 +136,9 @@ namespace rumpedav {
         const wxBitmapBundle bmFolder = wxArtProvider::GetBitmapBundle(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(24, 24));
 
         m_tbLeft = std::make_unique<wxAuiToolBar>(
-            this, ID_TB_LEFT, wxDefaultPosition, wxDefaultSize,
-            wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL |
-            wxAUI_TB_PLAIN_BACKGROUND
+                this, ID_TB_LEFT, wxDefaultPosition, wxDefaultSize,
+                wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL |
+                wxAUI_TB_PLAIN_BACKGROUND
         );
 
         m_tbLeft->AddTool(ID_TB_LEFT_BTN_PROJECT, _("Project"), bmFolder, _("Open Project"));
@@ -167,22 +160,22 @@ namespace rumpedav {
         m_tbLeft->Realize();
 
         m_auiManager.AddPane(
-            m_tbLeft.get(), wxAuiPaneInfo().
-            Name(PANE_TOOLBAR_LEFT).Caption("Sample Vertical Toolbar").
-            ToolbarPane().Left().
-            Gripper(false).BestSize(wxSize(42, INT_FAST16_MAX))
+                m_tbLeft.get(), wxAuiPaneInfo().
+                        Name(PANE_TOOLBAR_LEFT).Caption("Sample Vertical Toolbar").
+                        ToolbarPane().Left().
+                        Gripper(false).BestSize(wxSize(42, INT_FAST16_MAX))
         );
     }
 
     void MainFrame::CreatePanelContent(const wxSize &paneSize) {
         m_pContent = std::make_unique<wxSFMLCanvas>(
-            this, wxID_ANY, wxDefaultPosition, paneSize,
-            wxNO_BORDER, &m_auiManager
+                this, wxID_ANY, wxDefaultPosition, paneSize,
+                wxNO_BORDER, &m_auiManager
         );
         m_auiManager.AddPane(
-            m_pContent.get(), wxAuiPaneInfo().
-            Name(PANE_CONTENT).Caption("SFML Content").
-            CenterPane()
+                m_pContent.get(), wxAuiPaneInfo().
+                        Name(PANE_CONTENT).Caption("SFML Content").
+                        CenterPane()
         );
     }
 
@@ -193,9 +186,9 @@ namespace rumpedav {
 
     void MainFrame::CreatePanelProject(const wxSize &paneSize) {
         m_pProject = std::make_unique<wxTreeCtrl>(
-            this, wxID_ANY,
-            wxPoint(0, 0), paneSize,
-            wxTR_DEFAULT_STYLE | wxNO_BORDER
+                this, wxID_ANY,
+                wxPoint(0, 0), paneSize,
+                wxTR_DEFAULT_STYLE | wxNO_BORDER
         );
 
         wxSize size(16, 16);
@@ -226,13 +219,13 @@ namespace rumpedav {
         m_pProject->Expand(root);
 
         m_auiManager.AddPane(
-            m_pProject.get(), wxAuiPaneInfo().
-            Name(PANE_PROJECT).Caption("Project").
-            DefaultPane().
-            Left()
-            //.Layer(1).Position(1).
-            //CloseButton(true).
-            //MaximizeButton(true)
+                m_pProject.get(), wxAuiPaneInfo().
+                        Name(PANE_PROJECT).Caption("Project").
+                        DefaultPane().
+                        Left()
+                //.Layer(1).Position(1).
+                //CloseButton(true).
+                //MaximizeButton(true)
         );
     }
 }
