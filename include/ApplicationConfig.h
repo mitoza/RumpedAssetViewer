@@ -6,8 +6,6 @@
 #define APPLICATION_CONFIG_H
 #include <string>
 
-#include "SFML/Window/VideoMode.hpp"
-#include "SFML/Graphics.hpp"
 #include "./data/Themes.h"
 #include "./data/Fonts.h"
 
@@ -39,8 +37,6 @@ namespace rumpedav {
         ~ApplicationConfig() = default;
 
         ApplicationConfig &load();
-
-        [[nodiscard]] sf::VideoMode getVideoMode() const;
 
 
         static std::string getTitle();

@@ -13,7 +13,7 @@
 #include "../../include/ui/samples/SampleComboFrame.h"
 #include "../../include/ui/samples/SampleAuiFrame.h"
 #include "../../include/ui/samples/DndFrame.h"
-#include "wxSFMLCanvas.h"
+#include "controls/wxColorPane.h"
 
 
 namespace rumpedav {
@@ -39,7 +39,9 @@ namespace rumpedav {
     class MainFrame : public wxFrame {
         wxAuiManager m_auiManager;
         std::unique_ptr<wxAuiToolBar> m_tbLeft;
-        std::unique_ptr<wxSFMLCanvas> m_pContent;
+        //std::unique_ptr<wxSFMLCanvas> m_pContent;
+        std::unique_ptr<wxColorPane> m_pContent;
+
         std::unique_ptr<wxTreeCtrl> m_pProject;
 
     public:
@@ -64,6 +66,8 @@ namespace rumpedav {
         wxSizeReportCtrl *CreateSizeReportCtrl(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
 
         void CreatePanelProject(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
+
+        wxPanel *BuildControlsPanel(wxWindow *parent);
 
     };
 }

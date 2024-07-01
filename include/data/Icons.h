@@ -20,20 +20,16 @@ namespace rumpedav {
     class Icons {
 
     public:
-//        static tgui::Texture getIcon(const IconType iconType) {
-//            tgui::CharStringView charStringView;
-//            switch (iconType) {
-//                case IconType::CROSS_BLACK_256: charStringView = ICON_CROSS_BLACK_256; break;
-//            }
-//            tgui::Texture icon;
-//            icon.loadFromBase64(
-//                    charStringView,
-//                    {0, 0, 256, 256},
-//                    {0, 0, 256, 256},
-//                    true
-//            );
-//            return icon;
-//        }
+        // static wxBitmap *getIcon(const IconType iconType) {
+        //     std::string stringImage;
+        //     switch (iconType) {
+        //         case IconType::CROSS_BLACK_256: stringImage = ICON_CROSS_BLACK_256; break;
+        //     }
+        //     const auto size = reinterpret_cast<size_t>(stringImage.length);
+        //     const auto bitmap = new wxBitmap();
+        //     bitmap->NewFromPNGData(&stringImage, size);
+        //     return bitmap;
+        // }
     };
 
 }

@@ -8,13 +8,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-## SFML Options
-IF (CMAKE_BUILD_TYPE MATCHES Release)
-    option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
-ELSE ()
-    option(BUILD_SHARED_LIBS "Build shared libraries" ON)
-ENDIF ()
-
 ## wxWidgets Options
 set(wxBUILD_TESTS OFF) # CONSOLE_ONLY, ALL or OFF
 option(wxUSE_GUI "Build the UI libraries" ON)
@@ -40,19 +33,10 @@ ENDIF ()
 ## Git Fetch Content
 include(FetchContent)
 
-# SFML https://www.sfml-dev.org/tutorials/2.6/
-FetchContent_Declare(SFML
-        GIT_REPOSITORY https://github.com/SFML/SFML.git
-        GIT_TAG 2.6.x)
-# TGUI https://tgui.eu/tutorials/latest-stable/
+# wxWidgets https://docs.wxwidgets.org/latest/
 FetchContent_Declare(WX_WIDGETS
         GIT_REPOSITORY https://github.com/wxWidgets/wxWidgets.git
         GIT_TAG 3.2
-)
-# SDL3 https://wiki.libsdl.org/SDL3/FrontPage , https://github.com/topics/sdl3
-FetchContent_Declare(SDL3
-        GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
-        GIT_TAG main
 )
 
 # EnTT https://github.com/skypjack/entt/wiki
@@ -62,9 +46,7 @@ FetchContent_Declare(SDL3
 #)
 
 FetchContent_MakeAvailable(
-        SFML
         WX_WIDGETS
-        SDL3
         #        EnTT
 )
 
@@ -75,6 +57,8 @@ file(GLOB_RECURSE SRC_FILES
         ./src/data/*.cpp
         ./src/utils/*.cpp
         ./src/ui/samples/*.cpp
+        ./src/ui/controls/*.cpp
+
 )
 ## Header files directory
 file(GLOB_RECURSE INCLUDE_DIR
@@ -83,6 +67,8 @@ file(GLOB_RECURSE INCLUDE_DIR
         ./include/data
         ./include/utils
         ./include/ui/samples
+        ./include/ui/controls
+
 )
 
 message(STATUS "Build wsWidgets subdirectory: ${CMAKE_CURRENT_BINARY_DIR}/_deps/wx_widgets-subbuild")
@@ -95,14 +81,22 @@ IF (WIN32)
         add_executable(${CMAKE_PROJECT_NAME} main.cpp ${SRC_FILES})
     ENDIF ()
 ELSE ()
-    add_executable(${CMAKE_PROJECT_NAME} main.cpp ${SRC_FILES})
+    if (APPLE)
+        add_executable(${CMAKE_PROJECT_NAME} main.cpp ${SRC_FILES})
+
+        set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_INFO_LIST ${CMAKE_CURRENT_SOURCE_DIR}/Info.plist)
+    ELSE ()
+        add_executable(${CMAKE_PROJECT_NAME} main.cpp ${SRC_FILES})
+    ENDIF ()
 ENDIF ()
 
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${INCLUDE_DIR})
+#if(UNIX AND NOT APPLE)
+#    target_link_libraries(vsgwxviewer vsgwx ${wxWidgets_LIBRARIES} ${GTK3_LIBRARIES})
+#else()
+#    target_link_libraries(vsgwxviewer vsgwx ${wxWidgets_LIBRARIES})
+#endif()
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
-        sfml-system
-        sfml-graphics
-        sfml-window
 
         wx::core
         wx::base
@@ -120,6 +114,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
         wx::gl
         wx::net
 
-        sdl::
 )
 target_compile_features(${CMAKE_PROJECT_NAME} PRIVATE cxx_std_17)
