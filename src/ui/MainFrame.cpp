@@ -4,10 +4,6 @@
 
 #include "../../include/ui/MainFrame.h"
 
-#include "../../cmake-build-release/_deps/wx_widgets-src/include/wx/wrapsizer.h"
-#include "../../cmake-build-release/_deps/wx_widgets-src/include/wx/msw/tglbtn.h"
-#include "../../include/ui/controls/wxColorPane.h"
-
 namespace rumpedav {
     MainFrame::MainFrame()
         : wxFrame(nullptr, wxID_ANY, "Hello World", wxDefaultPosition,
@@ -172,9 +168,10 @@ namespace rumpedav {
     }
 
     void MainFrame::CreatePanelContent(const wxSize &paneSize) {
-        auto *controlsPanel = BuildControlsPanel(this);
+        //auto *controlsPanel = BuildControlsPanel(this);
+        auto *XMPPanel = new FormatXPMPanel(this, wxID_ANY, wxDefaultPosition, wxSize(200, 200));
 
-        m_auiManager.AddPane(controlsPanel, wxAuiPaneInfo().
+        m_auiManager.AddPane(XMPPanel, wxAuiPaneInfo().
                              Name(PANE_CONTENT).Caption("SFML Content").
                              CenterPane()
         );

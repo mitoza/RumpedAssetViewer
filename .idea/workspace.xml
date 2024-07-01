@@ -158,24 +158,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9698f6d-ea40-4b5e-9eed-1d8eff7e0758" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ui/controls/wxColorPane.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ui/controls/wxSelectablePane.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/controls/wxColorPane.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/controls/wxSelectablePane.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Application.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Application.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ApplicationConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ApplicationConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/data/Color.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/data/Color.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/data/Icons.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/data/Icons.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/ui/MainFrame.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/MainFrame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ui/wxSFMLCanvas.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationConfig.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationConfig.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/MainFrame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainFrame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/wxSFMLCanvas.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,20 +220,20 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\CPP\AssetViewer\src\ui" />
       <recent name="C:\CPP\AssetViewer\include\ui\controls" />
+      <recent name="C:\CPP\AssetViewer\src\ui" />
       <recent name="C:\CPP\AssetViewer\src\ui\controls" />
       <recent name="$PROJECT_DIR$/include/ui/samples" />
       <recent name="$PROJECT_DIR$/include/ui" />
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.AssetViewer">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="AssetViewer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="AssetViewer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="AssetViewer">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AssetViewer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="AssetViewer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="AssetViewer">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -1092,7 +1077,8 @@
       <workItem from="1719765495579" duration="2327000" />
       <workItem from="1719818805772" duration="460000" />
       <workItem from="1719819275758" duration="2956000" />
-      <workItem from="1719822274042" duration="5737000" />
+      <workItem from="1719822274042" duration="6367000" />
+      <workItem from="1719831995478" duration="11636000" />
     </task>
     <servers />
   </component>

@@ -10,10 +10,12 @@
 
 #include "wx/wx.h"
 #include "wx/aui/aui.h"
+#include "wx/wrapsizer.h"
 #include "../../include/ui/samples/SampleComboFrame.h"
 #include "../../include/ui/samples/SampleAuiFrame.h"
 #include "../../include/ui/samples/DndFrame.h"
 #include "controls/wxColorPane.h"
+#include "controls/FormatXPMPanel.h"
 
 
 namespace rumpedav {
