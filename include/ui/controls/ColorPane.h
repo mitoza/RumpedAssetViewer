@@ -4,7 +4,7 @@
 
 #ifndef WXCOLORPANE_H
 #define WXCOLORPANE_H
-#include "wxSelectablePane.h"
+#include "SelectablePane.h"
 
 
 class wxColorPane : public wxSelectablePane {

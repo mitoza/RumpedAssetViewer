@@ -158,9 +158,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9698f6d-ea40-4b5e-9eed-1d8eff7e0758" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/include/ui/Config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ui/controls/PaintPane.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controls/PaintPane.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/ui/MainFrame.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/MainFrame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/MainFrame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainFrame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ui/controls/FormatXPMPanel.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/FormatXPMPanel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ui/controls/wxColorPane.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/ColorPane.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ui/controls/wxSelectablePane.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/SelectablePane.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controls/FormatXPMPanel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/FormatXPMPanel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controls/wxColorPane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/ColorPane.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controls/wxSelectablePane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/SelectablePane.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +183,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/include/ui/MainFrame.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ui/MainFrame.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ui/samples/DnDFrame.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -229,11 +247,6 @@
   </component>
   <component name="RunManager" selected="CMake Application.AssetViewer">
     <configuration name="AssetViewer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AssetViewer" TARGET_NAME="AssetViewer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AssetViewer" RUN_TARGET_NAME="AssetViewer">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -1078,7 +1091,11 @@
       <workItem from="1719818805772" duration="460000" />
       <workItem from="1719819275758" duration="2956000" />
       <workItem from="1719822274042" duration="6367000" />
-      <workItem from="1719831995478" duration="11636000" />
+      <workItem from="1719831995478" duration="11816000" />
+      <workItem from="1720467893678" duration="637000" />
+      <workItem from="1720469283238" duration="743000" />
+      <workItem from="1720520692067" duration="10080000" />
+      <workItem from="1720531373998" duration="1962000" />
     </task>
     <servers />
   </component>

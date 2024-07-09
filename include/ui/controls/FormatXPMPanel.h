@@ -14,6 +14,8 @@
 #include "wx/propgrid/editors.h"
 #include "wx/propgrid/advprops.h"
 #include "wx/propgrid/manager.h"
+#include "PaintPane.h"
+#include "../Config.h"
 
 class FormatXPMPanel : public wxWindow {
 public:
@@ -24,11 +26,17 @@ public:
 
     wxListView *lvSettings;
     wxPropertyGridManager *propertyGrid;
+    PaintPane *paintPane;
 
     explicit FormatXPMPanel(wxWindow *parent, wxWindowID id = wxID_ANY, const wxPoint &pos = wxDefaultPosition,
                             const wxSize &size = wxDefaultSize);
-
     ~FormatXPMPanel() override;
+
+    void OnRightDown(wxMouseEvent &event);
+    void OnPropertyRightDown(wxPropertyGridEvent &event);
+    void OnPropertyChanged(wxPropertyGridEvent &event);
+    void OnPropertySelected(wxPropertyGridEvent &event);
+
 
     void AddColor();
 };

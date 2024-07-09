@@ -2,7 +2,7 @@
 // Created by mito on 01.07.2024.
 //
 
-#include "../../../include/ui/controls/wxSelectablePane.h"
+#include "../../../include/ui/controls/SelectablePane.h"
 
 #include "../../../cmake-build-release/_deps/wx_widgets-src/include/wx/graphics.h"
 

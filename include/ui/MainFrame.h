@@ -14,8 +14,9 @@
 #include "../../include/ui/samples/SampleComboFrame.h"
 #include "../../include/ui/samples/SampleAuiFrame.h"
 #include "../../include/ui/samples/DndFrame.h"
-#include "controls/wxColorPane.h"
+#include "controls/ColorPane.h"
 #include "controls/FormatXPMPanel.h"
+#include "Config.h"
 
 
 namespace rumpedav {
@@ -25,18 +26,6 @@ namespace rumpedav {
 #define PANE_CONTENT "pane_content"
 #define PANE_PROPERTIES "pane_properties"
 #define PANE_METADATA "pane_metadata"
-
-    enum {
-        ID_MENU_Hello = wxID_HIGHEST,
-        ID_MENU_QuickHello,
-        ID_MENU_SAMPLE_ComboBox,
-        ID_MENU_SAMPLE_AUI,
-        ID_MENU_SAMPLE_DND,
-
-        ID_TB_LEFT,
-        ID_TB_LEFT_BTN_PROJECT,
-        ID_TB_LEFT_BTN_OPTIONS,
-    };
 
     class MainFrame : public wxFrame {
         wxAuiManager m_auiManager;
