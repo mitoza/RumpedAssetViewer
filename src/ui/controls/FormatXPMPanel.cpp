@@ -28,13 +28,8 @@ FormatXPMPanel::FormatXPMPanel(wxWindow *parent, wxWindowID id, const wxPoint &p
     propertyGrid = new wxPropertyGridManager(settingsPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize,
         wxPGMAN_DEFAULT_STYLE | wxPG_NO_INTERNAL_BORDER | wxPG_SPLITTER_AUTO_CENTER
         );
-    auto *page = propertyGrid->AddPage("XMP Propetries");
-    propertyGrid->SetColumnCount(3);
-    propertyGrid->SetColumnTitle(2, "Prop");
-    page->Append(new wxUIntProperty("Width", wxPG_LABEL, 32));
-    page->Append(new wxUIntProperty("Height", wxPG_LABEL, 32));
-    auto *colorProperty = new wxColourProperty("\".\"", wxPG_LABEL, wxColor(100, 100, 200));
-    page->Append(colorProperty);
+    propertyGrid->SetColumnCount(2);
+    //propertyGrid->SetColumnTitle(2, "Prop");
     //propertyGrid->ShowHeader();
     vSizer->Add(propertyGrid, 0, wxEXPAND | wxALL, 0);
 
@@ -54,16 +49,9 @@ FormatXPMPanel::FormatXPMPanel(wxWindow *parent, wxWindowID id, const wxPoint &p
         event.Skip();
     });
 
+    RefreshProperties();
+
     Bind(wxEVT_RIGHT_UP, &FormatXPMPanel::OnRightDown, this);
-
-
-    // Bind(wxEVT_RIGHT_DOWN, [&](wxPropertyGridEvent &event) {
-    //     std::cout << "123" << std::endl;
-    //     wxMenu menu("XMP Settings");
-    //     menu.Append(wxID_ANY, "&About");
-    //     PopupMenu(&menu, 50, event.GetProperty()->GetY());
-    // }, propertyGrid->GetId());
-
 }
 
 void FormatXPMPanel::OnPropertyRightDown(wxPropertyGridEvent &event) {
@@ -77,7 +65,9 @@ void FormatXPMPanel::OnPropertyRightDown(wxPropertyGridEvent &event) {
     menu->Append(addItem);
 
     menu->Bind(wxEVT_MENU, [&](wxCommandEvent &event) {
-        AddColor();
+        if (event.GetId() == addItem->GetId()) {
+            AddColor();
+        }
     });
 
     const wxPoint pt = wxGetMousePosition();
@@ -88,9 +78,24 @@ void FormatXPMPanel::OnPropertyRightDown(wxPropertyGridEvent &event) {
 }
 
 void FormatXPMPanel::OnPropertyChanged(wxPropertyGridEvent &event) {
+    if (event.GetProperty()->GetName().StartsWith("color_")) {
+        const wxPGProperty* property =  event.GetProperty();
+        //auto color = wxColor(property->GetValueAsString());
+        wxAny value = property->GetValue();
+        auto color = value.As<wxColor>();
+        auto colorKey = event.GetProperty()->GetName().Right(1).GetChar(0);
+        paintPane->UpdateColor(colorKey, color);
+    }
+
 }
 
 void FormatXPMPanel::OnPropertySelected(wxPropertyGridEvent &event) {
+    if (event.GetProperty()->GetName().StartsWith("color_")) {
+        auto colorKey = event.GetProperty()->GetName().Right(1).GetChar(0);
+        paintPane->SetColor(colorKey);
+    } else {
+        paintPane->SetColor(' ');
+    }
 }
 
 FormatXPMPanel::~FormatXPMPanel() {
@@ -108,4 +113,29 @@ void FormatXPMPanel::OnRightDown(wxMouseEvent &event) {
 
 void FormatXPMPanel::AddColor() {
     std::cout << "Add Color" << std::endl;
+    RefreshProperties();
+}
+
+void FormatXPMPanel::RefreshProperties() const {
+    propertyGrid->Clear();
+    propertyGrid->Refresh();
+    auto *page = propertyGrid->AddPage("XMP Propetries");
+    propertyGrid->SetColumnCount(2);
+    //propertyGrid->SetColumnTitle(2, "Prop");
+    page->Append(new wxUIntProperty("Width", "width", paintPane->GetWidth()));
+    page->Append(new wxUIntProperty("Height", "height", paintPane->GetHeight()));
+
+    auto *colorNoneProperty = new wxStringProperty("\" \"", "none", "NONE");
+    colorNoneProperty->Enable(false);
+    page->Append(colorNoneProperty);
+
+    std::vector<char> colorKeys;
+    paintPane->GetColorKeys(colorKeys);
+    for(auto const& colorKey : colorKeys) {
+        wxString label = wxString("\"").append(colorKey).append("\"");
+        wxString name = wxString("color_").append(colorKey);
+        auto *colorProperty = new wxColourProperty(label, name, paintPane->GetColor(colorKey));
+        page->Append(colorProperty);
+    }
+
 }

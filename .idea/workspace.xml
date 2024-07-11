@@ -12,142 +12,30 @@
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="AssetViewer" targetName="wxjpeg" />
-      <config projectName="AssetViewer" targetName="scroll" />
       <config projectName="AssetViewer" targetName="wxpng" />
-      <config projectName="AssetViewer" targetName="caret" />
-      <config projectName="AssetViewer" targetName="erase" />
-      <config projectName="AssetViewer" targetName="animate" />
-      <config projectName="AssetViewer" targetName="keyboard" />
       <config projectName="AssetViewer" targetName="wxribbon" />
-      <config projectName="AssetViewer" targetName="artprov" />
-      <config projectName="AssetViewer" targetName="clipboard" />
-      <config projectName="AssetViewer" targetName="collpane" />
-      <config projectName="AssetViewer" targetName="oleauto" />
-      <config projectName="AssetViewer" targetName="penguin" />
-      <config projectName="AssetViewer" targetName="memcheck" />
-      <config projectName="AssetViewer" targetName="mediaplayer" />
       <config projectName="AssetViewer" targetName="wxscintilla" />
-      <config projectName="AssetViewer" targetName="baseipcserver" />
-      <config projectName="AssetViewer" targetName="combo" />
-      <config projectName="AssetViewer" targetName="except" />
-      <config projectName="AssetViewer" targetName="renddll" />
-      <config projectName="AssetViewer" targetName="ribbondemo" />
-      <config projectName="AssetViewer" targetName="ownerdrw" />
-      <config projectName="AssetViewer" targetName="htlbox" />
-      <config projectName="AssetViewer" targetName="listctrl" />
-      <config projectName="AssetViewer" targetName="cube" />
-      <config projectName="AssetViewer" targetName="taskbar" />
-      <config projectName="AssetViewer" targetName="validate" />
-      <config projectName="AssetViewer" targetName="internat" />
       <config projectName="AssetViewer" targetName="wxregex" />
-      <config projectName="AssetViewer" targetName="vscroll" />
       <config projectName="AssetViewer" targetName="wxstc" />
-      <config projectName="AssetViewer" targetName="client" />
-      <config projectName="AssetViewer" targetName="text" />
-      <config projectName="AssetViewer" targetName="docview" />
-      <config projectName="AssetViewer" targetName="event" />
-      <config projectName="AssetViewer" targetName="webrequest" />
       <config projectName="AssetViewer" targetName="wxxml" />
-      <config projectName="AssetViewer" targetName="fswatcher" />
       <config projectName="AssetViewer" targetName="wxcore" />
-      <config projectName="AssetViewer" targetName="thread" />
-      <config projectName="AssetViewer" targetName="minimal" />
-      <config projectName="AssetViewer" targetName="console" />
       <config projectName="AssetViewer" targetName="wxhtml" />
-      <config projectName="AssetViewer" targetName="auidemo" />
-      <config projectName="AssetViewer" targetName="ipcserver" />
-      <config projectName="AssetViewer" targetName="dataview" />
-      <config projectName="AssetViewer" targetName="splitter" />
-      <config projectName="AssetViewer" targetName="nativdlg" />
-      <config projectName="AssetViewer" targetName="baseclient" />
-      <config projectName="AssetViewer" targetName="imagesample" />
-      <config projectName="AssetViewer" targetName="pyramid" />
-      <config projectName="AssetViewer" targetName="life" />
-      <config projectName="AssetViewer" targetName="joytest" />
-      <config projectName="AssetViewer" targetName="webviewsample" />
-      <config projectName="AssetViewer" targetName="about" />
-      <config projectName="AssetViewer" targetName="splash" />
       <config projectName="AssetViewer" targetName="wxpropgrid" />
-      <config projectName="AssetViewer" targetName="wxzlib" />
-      <config projectName="AssetViewer" targetName="statbar" />
-      <config projectName="AssetViewer" targetName="htmlprinting" />
-      <config projectName="AssetViewer" targetName="layout" />
-      <config projectName="AssetViewer" targetName="shaped" />
-      <config projectName="AssetViewer" targetName="popup" />
-      <config projectName="AssetViewer" targetName="taskbarbutton" />
       <config projectName="AssetViewer" targetName="wxrc" />
       <config projectName="AssetViewer" targetName="wxbase" />
-      <config projectName="AssetViewer" targetName="dnd" />
-      <config projectName="AssetViewer" targetName="baseipcclient" />
-      <config projectName="AssetViewer" targetName="notebook" />
-      <config projectName="AssetViewer" targetName="xrcdemo" />
-      <config projectName="AssetViewer" targetName="zip" />
-      <config projectName="AssetViewer" targetName="isosurf" />
-      <config projectName="AssetViewer" targetName="helpview" />
-      <config projectName="AssetViewer" targetName="sdk_exe" />
-      <config projectName="AssetViewer" targetName="secretstore" />
       <config projectName="AssetViewer" targetName="wxxrc" />
-      <config projectName="AssetViewer" targetName="svg" />
-      <config projectName="AssetViewer" targetName="treectrl" />
-      <config projectName="AssetViewer" targetName="dialup" />
-      <config projectName="AssetViewer" targetName="toolbar" />
-      <config projectName="AssetViewer" targetName="bombs" />
-      <config projectName="AssetViewer" targetName="regtest" />
       <config projectName="AssetViewer" targetName="wxqa" />
-      <config projectName="AssetViewer" targetName="wxpoem" />
-      <config projectName="AssetViewer" targetName="archive" />
-      <config projectName="AssetViewer" targetName="wizard" />
       <config projectName="AssetViewer" targetName="AssetViewer" />
-      <config projectName="AssetViewer" targetName="exec" />
       <config projectName="AssetViewer" targetName="wxadv" />
       <config projectName="AssetViewer" targetName="wxtiff" />
       <config projectName="AssetViewer" targetName="wxaui" />
-      <config projectName="AssetViewer" targetName="baseserver" />
-      <config projectName="AssetViewer" targetName="render" />
       <config projectName="AssetViewer" targetName="wxgl" />
-      <config projectName="AssetViewer" targetName="dialogs" />
-      <config projectName="AssetViewer" targetName="treelist" />
-      <config projectName="AssetViewer" targetName="server" />
-      <config projectName="AssetViewer" targetName="htmlhelp" />
-      <config projectName="AssetViewer" targetName="widget" />
       <config projectName="AssetViewer" targetName="wxnet" />
       <config projectName="AssetViewer" targetName="wxwebview" />
-      <config projectName="AssetViewer" targetName="forty" />
-      <config projectName="AssetViewer" targetName="wxexpat" />
-      <config projectName="AssetViewer" targetName="propgriddemo" />
-      <config projectName="AssetViewer" targetName="uiaction" />
-      <config projectName="AssetViewer" targetName="dragimag" />
-      <config projectName="AssetViewer" targetName="virtual" />
       <config projectName="AssetViewer" targetName="wxmedia" />
-      <config projectName="AssetViewer" targetName="stctest" />
-      <config projectName="AssetViewer" targetName="power" />
-      <config projectName="AssetViewer" targetName="menu" />
-      <config projectName="AssetViewer" targetName="sashtest" />
-      <config projectName="AssetViewer" targetName="display" />
-      <config projectName="AssetViewer" targetName="richtextdemo" />
-      <config projectName="AssetViewer" targetName="font" />
-      <config projectName="AssetViewer" targetName="mdi" />
-      <config projectName="AssetViewer" targetName="wrapsizer" />
       <config projectName="AssetViewer" targetName="wxrichtext" />
-      <config projectName="AssetViewer" targetName="fractal" />
-      <config projectName="AssetViewer" targetName="grid" />
       <config projectName="AssetViewer" targetName="wx_widgets-populate" />
-      <config projectName="AssetViewer" targetName="widgets" />
-      <config projectName="AssetViewer" targetName="htmltest" />
-      <config projectName="AssetViewer" targetName="config" />
-      <config projectName="AssetViewer" targetName="taborder" />
-      <config projectName="AssetViewer" targetName="typetest" />
-      <config projectName="AssetViewer" targetName="my_dll" />
-      <config projectName="AssetViewer" targetName="access" />
-      <config projectName="AssetViewer" targetName="wx_exe" />
-      <config projectName="AssetViewer" targetName="preferences" />
-      <config projectName="AssetViewer" targetName="printing" />
-      <config projectName="AssetViewer" targetName="calendar" />
-      <config projectName="AssetViewer" targetName="drawingsample" />
-      <config projectName="AssetViewer" targetName="ipcclient" />
-      <config projectName="AssetViewer" targetName="sound" />
       <config projectName="AssetViewer" targetName="uninstall" />
-      <config projectName="AssetViewer" targetName="helpdemo" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -158,17 +46,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9698f6d-ea40-4b5e-9eed-1d8eff7e0758" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/include/ui/Config.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/ui/controls/PaintPane.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/controls/PaintPane.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ui/MainFrame.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/MainFrame.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/ui/controls/FormatXPMPanel.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/FormatXPMPanel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ui/controls/wxColorPane.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/ColorPane.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ui/controls/wxSelectablePane.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/SelectablePane.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ui/controls/PaintPane.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/PaintPane.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/controls/FormatXPMPanel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/FormatXPMPanel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/controls/wxColorPane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/ColorPane.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/controls/wxSelectablePane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/SelectablePane.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controls/PaintPane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/PaintPane.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,9 +78,9 @@
     <setting file="file://$PROJECT_DIR$/include/ui/MainFrame.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ui/MainFrame.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ui/samples/DnDFrame.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../msys64/mingw64/include/c++/13.2.0/bits/basic_string.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../msys64/mingw64/include/c++/13.2.0/ext/alloc_traits.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../msys64/mingw64/include/stdlib.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/msys64/mingw64/include/c++/13.2.0/bits/basic_string.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/msys64/mingw64/include/c++/13.2.0/ext/alloc_traits.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/msys64/mingw64/include/stdlib.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -1096,6 +978,9 @@
       <workItem from="1720469283238" duration="743000" />
       <workItem from="1720520692067" duration="10080000" />
       <workItem from="1720531373998" duration="1962000" />
+      <workItem from="1720612405940" duration="328000" />
+      <workItem from="1720612739623" duration="1806000" />
+      <workItem from="1720711465788" duration="11018000" />
     </task>
     <servers />
   </component>

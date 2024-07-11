@@ -19,11 +19,6 @@
 
 class FormatXPMPanel : public wxWindow {
 public:
-    int width = 32;
-    int height = 32;
-    int colors = 1;
-    int chars_per_pixel = 1;
-
     wxListView *lvSettings;
     wxPropertyGridManager *propertyGrid;
     PaintPane *paintPane;
@@ -37,8 +32,10 @@ public:
     void OnPropertyChanged(wxPropertyGridEvent &event);
     void OnPropertySelected(wxPropertyGridEvent &event);
 
+    void RefreshProperties() const;
 
     void AddColor();
+
 };
 
 
