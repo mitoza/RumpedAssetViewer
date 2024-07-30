@@ -35,7 +35,7 @@ namespace rumpedav {
     public:
         static std::string encode(const unsigned char *data, std::size_t nrBytes);
 
-        static std::vector<unsigned char> decode(std::string_view data);
+        static std::vector<unsigned char> decode(std::string data);
     };
 
 }

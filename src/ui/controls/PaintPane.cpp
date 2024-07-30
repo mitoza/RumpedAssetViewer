@@ -7,9 +7,12 @@
 #include "../../../cmake-build-release/_deps/wx_widgets-src/include/wx/dcbuffer.h"
 #include "../../../cmake-build-release/_deps/wx_widgets-src/include/wx/graphics.h"
 
+wxDEFINE_EVENT(EVT_PAINT_CHANGED, PaintChangedEvent);
+
 PaintPane::PaintPane(wxWindow *parent, wxWindowID id, const wxPoint &pos, const wxSize &size)
         : wxWindow(parent, id, pos, size) {
     Reset();
+    colors['.'] = wxColor(0, 120, 0);
     this->SetBackgroundStyle(wxBG_STYLE_PAINT);
     Bind(wxEVT_PAINT, &PaintPane::OnPaint, this);
     Bind(wxEVT_SIZE, &PaintPane::OnSize, this);
@@ -21,7 +24,7 @@ PaintPane::PaintPane(wxWindow *parent, wxWindowID id, const wxPoint &pos, const 
 void PaintPane::OnPaint(wxPaintEvent &event) {
     //wxWindow::OnPaint(event);
     wxBufferedPaintDC dc(this);
-    dc.SetBackground(wxBrush(wxColor(255, 255, 255)));
+    dc.SetBackground(wxBrush(wxColor(240, 240, 240)));
     dc.Clear();
 
     auto gc = wxGraphicsContext::Create(dc);
@@ -53,10 +56,14 @@ void PaintPane::OnMouse(wxMouseEvent &mouseEvent) {
         return;
     }
 
-    if (mouseEvent.LeftDown()) {
+    if (mouseEvent.LeftDown() && data[y * _width + x] != currentColor) {
         mousePrevPoint = {x, y};
         data[y * _width + x] = currentColor;
         Refresh();
+
+        PaintChangedEvent event(EVT_PAINT_CHANGED, GetId(), {x, y}, currentColor);
+        event.SetEventObject(this);
+        ProcessWindowEvent(event);
     } else if (mouseEvent.LeftUp()) {
         mousePrevPoint = {-1, -1};
     } else if (mouseEvent.Dragging()) {
@@ -64,6 +71,10 @@ void PaintPane::OnMouse(wxMouseEvent &mouseEvent) {
             mousePrevPoint = {x, y};
             data[y * _width + x] = currentColor;
             Refresh();
+
+            PaintChangedEvent event(EVT_PAINT_CHANGED, GetId(), {x, y}, currentColor);
+            event.SetEventObject(this);
+            ProcessWindowEvent(event);
         }
     }
 
@@ -73,12 +84,8 @@ void PaintPane::Reset() {
     _width = 32;
     _height = 32;
     colors.clear();
-    colors['.'] = wxColor(0, 120, 0);
     data.clear();
     data = std::vector(_width * _height, ' ');
-    data[5] = '.';
-    data[50] = '.';
-    data[500] = '.';
 }
 
 void PaintPane::DrawGrid(wxGraphicsContext *gc, const wxRect &rect) const {
@@ -119,11 +126,12 @@ wxPoint PaintPane::GetStartPoint() const {
     return startPoint;
 }
 
-void PaintPane::AddColor(const char colorKey, wxColour &color) {
-    this->colors[colorKey] = color;
+void PaintPane::AddColor() {
+    char newColorKey = colorKeys[this->colors.size()];
+    this->colors[newColorKey] = wxColor(128, 128, 128);
 }
 
-void PaintPane::UpdateColor(char colorKey, wxColour &color) {
+void PaintPane::UpdateColor(const char colorKey, wxColour &color) {
     colors[colorKey] = color;
     Refresh();
 }
@@ -149,7 +157,7 @@ unsigned int PaintPane::GetHeight() const {
 }
 
 void PaintPane::GetColorKeys(std::vector<char> &colorKeys) const {
-    for(auto & [colorKey, color] : colors) {
+    for (auto &[colorKey, color]: colors) {
         colorKeys.push_back(colorKey);
     }
 }
@@ -164,5 +172,40 @@ wxColor PaintPane::GetColor(char colorKey) {
 
 unsigned int PaintPane::GetColorsSize() {
     return colors.size();
+}
+
+wxImage *PaintPane::GetImage() {
+    //return wxImage{_width, _height, GetData()};
+    auto *image = new unsigned char[_width * _height * 3];
+    auto *alpha = new unsigned char[_width * _height];
+    int index = 0;
+    int alphaIndex = 0;
+    for (auto &colorKey: data) {
+        wxColor color = wxColor(0, 0, 0);
+        alpha[alphaIndex++] = 0;
+        if (colors.count(colorKey) > 0) {
+            color = colors[colorKey];
+            alpha[alphaIndex-1] = 255;
+        }
+        image[index++] = color.Red();
+        image[index++] = color.Green();
+        image[index++] = color.Blue();
+    }
+    return new wxImage{_width, _height, image, alpha};
+}
+
+unsigned char *PaintPane::GetData() {
+    auto *image = new unsigned char[_width * _height * 3];
+    int index = 0;
+    for (auto &colorKey: data) {
+        wxColor color = wxColor(0, 0, 0);
+        if (colors.count(colorKey) > 0) {
+            color = colors[colorKey];
+        }
+        image[index++] = color.Red();
+        image[index++] = color.Green();
+        image[index++] = color.Blue();
+    }
+    return image;
 }
 

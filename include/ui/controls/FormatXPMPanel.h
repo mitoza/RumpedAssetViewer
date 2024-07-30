@@ -22,6 +22,8 @@ public:
     wxListView *lvSettings;
     wxPropertyGridManager *propertyGrid;
     PaintPane *paintPane;
+    wxStaticBitmap *bmpPreview;
+    wxTextCtrl *textPanel;
 
     explicit FormatXPMPanel(wxWindow *parent, wxWindowID id = wxID_ANY, const wxPoint &pos = wxDefaultPosition,
                             const wxSize &size = wxDefaultSize);
@@ -31,6 +33,8 @@ public:
     void OnPropertyRightDown(wxPropertyGridEvent &event);
     void OnPropertyChanged(wxPropertyGridEvent &event);
     void OnPropertySelected(wxPropertyGridEvent &event);
+
+    void OnPaintChanged(PaintChangedEvent &event);
 
     void RefreshProperties() const;
 

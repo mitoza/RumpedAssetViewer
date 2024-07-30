@@ -33,7 +33,7 @@ namespace rumpedav {
         return result;
     }
 
-    std::vector<unsigned char> Base64::decode(std::string_view data) {
+    std::vector<unsigned char> Base64::decode(std::string data) {
         // Reserve space for the result. This might reserve up to 2 bytes more than needed if data is padded.
         std::vector<unsigned char> result;
         result.reserve(data.length() * 6 / 8);

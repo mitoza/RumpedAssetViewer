@@ -5,6 +5,8 @@
 #include "../../../include/ui/controls/FormatXPMPanel.h"
 
 #include "../../../include/data/Color.h"
+#include "wx/artprov.h"
+#include "wx/sstream.h"
 
 FormatXPMPanel::FormatXPMPanel(wxWindow *parent, wxWindowID id, const wxPoint &pos, const wxSize &size)
     : wxWindow(parent, id, pos, size) {
@@ -15,28 +17,39 @@ FormatXPMPanel::FormatXPMPanel(wxWindow *parent, wxWindowID id, const wxPoint &p
     vSplitter->SetSashInvisible(false);
     vSplitter->SetSashGravity(0.0f);
 
-    auto *settingsPanel = new wxPanel(vSplitter, wxID_ANY);
-    settingsPanel->SetBackgroundColour(
-        rumpedav::Color::Material(rumpedav::MaterialColor::Green, rumpedav::Variant::_500));
-
+    auto *topPanel = new wxPanel(vSplitter, wxID_ANY);
+    topPanel->SetBackgroundColour(rumpedav::Color::Material(rumpedav::MaterialColor::Green, rumpedav::Variant::_500));
     auto *bottomPanel = new wxPanel(vSplitter, wxID_ANY);
     bottomPanel->SetBackgroundColour(rumpedav::Color::Material(rumpedav::MaterialColor::Blue, rumpedav::Variant::_500));
-    vSplitter->SplitHorizontally(settingsPanel, bottomPanel);
+    vSplitter->SplitHorizontally(topPanel, bottomPanel);
 
-    auto *vSizer = new wxBoxSizer(wxVERTICAL);
+    auto *vTopSizer = new wxBoxSizer(wxVERTICAL);
 
-    propertyGrid = new wxPropertyGridManager(settingsPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize,
+    propertyGrid = new wxPropertyGridManager(topPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize,
         wxPGMAN_DEFAULT_STYLE | wxPG_NO_INTERNAL_BORDER | wxPG_SPLITTER_AUTO_CENTER
         );
     propertyGrid->SetColumnCount(2);
     //propertyGrid->SetColumnTitle(2, "Prop");
     //propertyGrid->ShowHeader();
-    vSizer->Add(propertyGrid, 0, wxEXPAND | wxALL, 0);
+    vTopSizer->Add(propertyGrid, 0, wxEXPAND | wxALL, 0);
 
-    paintPane = new PaintPane(settingsPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize);
-    vSizer->Add(paintPane, 1, wxEXPAND | wxALL, 0);
+    paintPane = new PaintPane(topPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize);
+    vTopSizer->Add(paintPane, 1, wxEXPAND | wxALL, 0);
 
-    settingsPanel->SetSizerAndFit(vSizer);
+    const wxBitmapBundle bmFolder = wxArtProvider::GetBitmapBundle(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(24, 24));
+    bmpPreview = new wxStaticBitmap(topPanel, wxID_ANY, bmFolder, wxDefaultPosition, wxDefaultSize);
+    bmpPreview->SetBackgroundColour(wxColor(255,255,255));
+    vTopSizer->Add(bmpPreview, 0, wxALL, 16);
+
+    topPanel->SetSizerAndFit(vTopSizer);
+
+    auto *vBottomSizer = new wxBoxSizer(wxVERTICAL);
+
+    textPanel = new wxTextCtrl(bottomPanel, wxID_ANY, "XMP", wxDefaultPosition, wxDefaultSize,
+                                      wxNO_BORDER | wxTE_MULTILINE);
+    vBottomSizer->Add(textPanel, 1, wxEXPAND | wxALL, 0);
+
+    bottomPanel->SetSizerAndFit(vBottomSizer);
 
     rootSizer->Add(vSplitter, 1, wxEXPAND | wxALL, 0);
     SetSizer(rootSizer);
@@ -44,10 +57,8 @@ FormatXPMPanel::FormatXPMPanel(wxWindow *parent, wxWindowID id, const wxPoint &p
     propertyGrid->Bind(wxEVT_PG_RIGHT_CLICK, &FormatXPMPanel::OnPropertyRightDown, this);
     propertyGrid->Bind(wxEVT_PG_CHANGED, &FormatXPMPanel::OnPropertyChanged, this);
     propertyGrid->Bind(wxEVT_PG_SELECTED, &FormatXPMPanel::OnPropertySelected, this);
-    propertyGrid->Bind(wxEVT_CONTEXT_MENU, [&](wxContextMenuEvent &event){
-        //AddColor();
-        event.Skip();
-    });
+
+    paintPane->Bind(EVT_PAINT_CHANGED, &FormatXPMPanel::OnPaintChanged, this);
 
     RefreshProperties();
 
@@ -66,7 +77,8 @@ void FormatXPMPanel::OnPropertyRightDown(wxPropertyGridEvent &event) {
 
     menu->Bind(wxEVT_MENU, [&](wxCommandEvent &event) {
         if (event.GetId() == addItem->GetId()) {
-            AddColor();
+            paintPane->AddColor();
+            RefreshProperties();
         }
     });
 
@@ -114,6 +126,23 @@ void FormatXPMPanel::OnRightDown(wxMouseEvent &event) {
 void FormatXPMPanel::AddColor() {
     std::cout << "Add Color" << std::endl;
     RefreshProperties();
+}
+
+void FormatXPMPanel::OnPaintChanged(PaintChangedEvent &event) {
+    std::cout << "Paint Changed: " << event.GetColorKey() << std::endl;
+
+    const wxBitmapBundle bmFolder = wxArtProvider::GetBitmapBundle(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(24, 24));
+    //bmpPreview->SetBitmap(bmFolder);
+    wxBitmapBundle bundle;
+    wxImage *image = paintPane->GetImage();
+    bmpPreview->SetBitmap({*image});
+
+    wxXPMHandler xmpHandler;
+    wxStringOutputStream sos;
+    xmpHandler.SaveFile(image, sos);
+    textPanel->SetValue(sos.GetString());
+    delete image;
+
 }
 
 void FormatXPMPanel::RefreshProperties() const {

@@ -46,11 +46,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9698f6d-ea40-4b5e-9eed-1d8eff7e0758" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/include/utils/XMPFormat.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/XMPFormat.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/ui/controls/FormatXPMPanel.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/FormatXPMPanel.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/ui/controls/PaintPane.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/PaintPane.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/utils/Base64.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/utils/Base64.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/controls/FormatXPMPanel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/FormatXPMPanel.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/controls/PaintPane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/PaintPane.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Base64.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Base64.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,11 +124,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include/utils" />
       <recent name="C:\CPP\AssetViewer\include\ui\controls" />
       <recent name="C:\CPP\AssetViewer\src\ui" />
       <recent name="C:\CPP\AssetViewer\src\ui\controls" />
       <recent name="$PROJECT_DIR$/include/ui/samples" />
-      <recent name="$PROJECT_DIR$/include/ui" />
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.AssetViewer">
@@ -980,7 +984,8 @@
       <workItem from="1720531373998" duration="1962000" />
       <workItem from="1720612405940" duration="328000" />
       <workItem from="1720612739623" duration="1806000" />
-      <workItem from="1720711465788" duration="11018000" />
+      <workItem from="1720711465788" duration="19428000" />
+      <workItem from="1721040523114" duration="10139000" />
     </task>
     <servers />
   </component>
