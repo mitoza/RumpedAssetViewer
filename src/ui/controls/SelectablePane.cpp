@@ -8,7 +8,7 @@
 
 
 wxSelectablePane::wxSelectablePane(wxWindow *parent, wxWindowID id, const wxPoint &pos, const wxSize &size)
-    : wxWindow(parent, id, pos, size, wxFULL_REPAINT_ON_RESIZE){
+    : wxWindow(parent, id, pos, size, wxFULL_REPAINT_ON_RESIZE) {
     this->SetBackgroundStyle(wxBG_STYLE_PAINT);
 
     Bind(wxEVT_PAINT, &wxSelectablePane::OnPaint, this);

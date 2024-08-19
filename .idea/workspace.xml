@@ -46,15 +46,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9698f6d-ea40-4b5e-9eed-1d8eff7e0758" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/include/utils/XMPFormat.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/XMPFormat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/ui/controls/PropertiesCtrl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/controls/PropertiesCtrl.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ui/controls/FormatXPMPanel.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/FormatXPMPanel.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/ui/controls/PaintPane.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/controls/PaintPane.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/utils/Base64.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/utils/Base64.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/controls/FormatXPMPanel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/FormatXPMPanel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/controls/PaintPane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/PaintPane.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Base64.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Base64.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ui/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/Config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ui/MainFrame.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/ui/MainFrame.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/MainFrame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainFrame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/controls/SelectablePane.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/controls/SelectablePane.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,22 +67,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/include/ui/MainFrame.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ui/MainFrame.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/ui/samples/DnDFrame.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/msys64/mingw64/include/c++/13.2.0/bits/basic_string.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/msys64/mingw64/include/c++/13.2.0/ext/alloc_traits.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/msys64/mingw64/include/stdlib.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../msys64/mingw64/include/c++/13.2.0/bits/unique_ptr.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -124,8 +110,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/include/utils" />
       <recent name="C:\CPP\AssetViewer\include\ui\controls" />
+      <recent name="$PROJECT_DIR$/include/utils" />
       <recent name="C:\CPP\AssetViewer\src\ui" />
       <recent name="C:\CPP\AssetViewer\src\ui\controls" />
       <recent name="$PROJECT_DIR$/include/ui/samples" />
@@ -916,6 +902,7 @@
       <item itemvalue="CMake Application.treelist" />
       <item itemvalue="CMake Application.typetest" />
       <item itemvalue="CMake Application.uiaction" />
+      <item itemvalue="CMake Application.uninstall" />
       <item itemvalue="CMake Application.validate" />
       <item itemvalue="CMake Application.virtual" />
       <item itemvalue="CMake Application.vscroll" />
@@ -926,6 +913,7 @@
       <item itemvalue="CMake Application.wizard" />
       <item itemvalue="CMake Application.wrapsizer" />
       <item itemvalue="CMake Application.wx_exe" />
+      <item itemvalue="CMake Application.wx_widgets-populate" />
       <item itemvalue="CMake Application.wxadv" />
       <item itemvalue="CMake Application.wxaui" />
       <item itemvalue="CMake Application.wxbase" />
@@ -940,6 +928,7 @@
       <item itemvalue="CMake Application.wxpoem" />
       <item itemvalue="CMake Application.wxpropgrid" />
       <item itemvalue="CMake Application.wxqa" />
+      <item itemvalue="CMake Application.wxrc" />
       <item itemvalue="CMake Application.wxregex" />
       <item itemvalue="CMake Application.wxribbon" />
       <item itemvalue="CMake Application.wxrichtext" />
@@ -952,9 +941,6 @@
       <item itemvalue="CMake Application.wxzlib" />
       <item itemvalue="CMake Application.xrcdemo" />
       <item itemvalue="CMake Application.zip" />
-      <item itemvalue="CMake Application.uninstall" />
-      <item itemvalue="CMake Application.wxrc" />
-      <item itemvalue="CMake Application.wx_widgets-populate" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -986,6 +972,8 @@
       <workItem from="1720612739623" duration="1806000" />
       <workItem from="1720711465788" duration="19428000" />
       <workItem from="1721040523114" duration="10139000" />
+      <workItem from="1723383820871" duration="4000" />
+      <workItem from="1723535770510" duration="4896000" />
     </task>
     <servers />
   </component>

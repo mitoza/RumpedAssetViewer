@@ -16,23 +16,20 @@
 #include "../../include/ui/samples/DndFrame.h"
 #include "controls/ColorPane.h"
 #include "controls/FormatXPMPanel.h"
+#include "controls/PropertiesCtrl.h"
 #include "Config.h"
 
 
 namespace rumpedav {
-#define PANE_TOOLBAR_TOP "pane_toolbar_top"
-#define PANE_TOOLBAR_LEFT "pane_toolbar_left"
-#define PANE_PROJECT "pane_project"
-#define PANE_CONTENT "pane_content"
-#define PANE_PROPERTIES "pane_properties"
-#define PANE_METADATA "pane_metadata"
+
+    // class PropertiesCtrl;
 
     class MainFrame : public wxFrame {
         wxAuiManager m_auiManager;
         std::unique_ptr<wxAuiToolBar> m_tbLeft;
         //std::unique_ptr<wxSFMLCanvas> m_pContent;
         std::unique_ptr<wxColorPane> m_pContent;
-
+        std::unique_ptr<PropertiesCtrl> m_propCtrl;
         std::unique_ptr<wxTreeCtrl> m_pProject;
 
     public:
@@ -55,6 +52,8 @@ namespace rumpedav {
         void CreatePanelContent(const wxSize &paneSize = wxWindow::FromDIP(wxSize(800, 600), nullptr));
 
         wxSizeReportCtrl *CreateSizeReportCtrl(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
+
+        void CreatePropertiesCtrl(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
 
         void CreatePanelProject(const wxSize &paneSize = wxWindow::FromDIP(wxSize(320, 240), nullptr));
 

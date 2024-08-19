@@ -93,6 +93,7 @@ namespace rumpedav {
         CreateToolbarLeft();
         CreatePanelContent();
         CreatePanelProject();
+        CreatePropertiesCtrl();
 
         m_auiManager.AddPane(
             CreateSizeReportCtrl(), wxAuiPaneInfo().
@@ -182,6 +183,20 @@ namespace rumpedav {
         return ctrl;
     }
 
+    void MainFrame::CreatePropertiesCtrl(const wxSize &paneSize) {
+        m_propCtrl = std::make_unique<PropertiesCtrl>(
+            this, ID_PROPERTIES_CONTROL, wxDefaultPosition, paneSize,
+            wxAUI_TB_DEFAULT_STYLE | wxAUI_TB_OVERFLOW | wxAUI_TB_VERTICAL | wxAUI_TB_PLAIN_BACKGROUND,
+            &m_auiManager
+        );
+
+        m_auiManager.AddPane(
+            m_propCtrl.get(), wxAuiPaneInfo().
+            Name(CTRL_PROPERTIES).Caption("Properties").
+            Right().CloseButton(true)
+        );
+    }
+
     void MainFrame::CreatePanelProject(const wxSize &paneSize) {
         m_pProject = std::make_unique<wxTreeCtrl>(
             this, wxID_ANY,
@@ -254,6 +269,5 @@ namespace rumpedav {
 
         controlsPanel->SetSizer(vSizer);
         return controlsPanel;
-
     }
 }
